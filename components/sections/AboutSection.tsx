@@ -13,7 +13,7 @@ const aboutImages = [
 
 export default function AboutSection() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16" style={{ backgroundColor: "var(--fundo-claro)" }}>
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Texto */}
@@ -26,7 +26,7 @@ export default function AboutSection() {
             />
             <Link
               href="/sobre"
-              className="inline-flex items-center gap-2 bg-primary text-white font-semibold px-6 py-3 rounded-lg hover:bg-primary-600 transition-colors"
+              className="botao-principal gap-2"
             >
               Conheça mais sobre nós →
             </Link>

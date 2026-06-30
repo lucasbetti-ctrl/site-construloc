@@ -7,7 +7,7 @@ export default function SecondProductGrid() {
   const displayProducts = nonFeaturedProducts.slice(0, 6);
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16" style={{ backgroundColor: "var(--fundo-claro)" }}>
       <div className="container mx-auto px-4">
         <SectionTitle
           title="Mais Produtos"
@@ -23,7 +23,7 @@ export default function SecondProductGrid() {
         <div className="mt-10 text-center">
           <Link
             href="/produtos"
-            className="inline-flex items-center gap-2 border-2 border-primary text-primary font-semibold px-8 py-3 rounded-lg hover:bg-primary hover:text-white transition-colors"
+            className="botao-secundario gap-2"
           >
             Ver Catálogo Completo →
           </Link>

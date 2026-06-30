@@ -33,7 +33,7 @@ export default function SobrePage() {
   return (
     <>
       {/* Hero da página */}
-      <section className="relative py-20 bg-primary overflow-hidden">
+      <section className="relative py-20 bg-primary-800 overflow-hidden">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-black text-white uppercase">Sobre Nós</h1>
           <p className="mt-4 text-primary-200 text-lg max-w-2xl mx-auto">
@@ -43,7 +43,7 @@ export default function SobrePage() {
       </section>
 
       {/* História */}
-      <section className="py-16 bg-white">
+      <section className="py-16" style={{ backgroundColor: "var(--fundo-claro)" }}>
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -63,7 +63,7 @@ export default function SobrePage() {
                 href={generateWhatsAppLink("Olá! Gostaria de saber mais sobre a Construloc.")}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 mt-8 bg-accent text-white font-bold px-6 py-3 rounded-lg hover:bg-accent-600 transition-colors"
+                className="botao-principal gap-2 mt-8"
               >
                 <MessageCircle size={18} aria-hidden="true" />
                 Fale Conosco
@@ -83,7 +83,7 @@ export default function SobrePage() {
       </section>
 
       {/* Missão, Visão e Valores */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16" style={{ backgroundColor: "var(--fundo-cinza)" }}>
         <div className="container mx-auto px-4">
           <SectionTitle
             title="Missão, Visão e Valores"
@@ -96,7 +96,7 @@ export default function SobrePage() {
                 key={item.title}
                 className="bg-white rounded-xl p-8 border border-gray-200 hover:shadow-md transition-shadow"
               >
-                <div className="w-10 h-1 bg-secondary mb-4 rounded" />
+                <div className="w-10 h-1 bg-secondary rounded mb-4" />
                 <h2 className="text-xl font-bold text-primary mb-3">{item.title}</h2>
                 <p className="text-gray-600 text-sm leading-relaxed">{item.description}</p>
               </article>
@@ -106,7 +106,7 @@ export default function SobrePage() {
       </section>
 
       {/* Números */}
-      <section className="py-16 bg-primary">
+      <section className="py-16 bg-primary-800">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[

@@ -20,7 +20,7 @@ export default function CategoryCard({ category }: CategoryCardProps) {
         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         className="object-cover group-hover:scale-105 transition-transform duration-500"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-primary-800/90 via-primary/40 to-transparent" />
       <div className="absolute bottom-0 left-0 right-0 p-5">
         <h3 className="text-white font-bold text-base leading-tight">{category.name}</h3>
         <span className="inline-block mt-2 text-secondary text-xs font-semibold">

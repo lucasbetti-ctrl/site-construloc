@@ -32,7 +32,7 @@ export default function ProdutosPage({ searchParams }: ProductsPageProps) {
 
   return (
     <>
-      <section className="py-12 bg-primary">
+      <section className="py-12 bg-primary-800">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-black text-white uppercase">
             {activeCategory ? activeCategory.name : "Todos os Produtos"}
@@ -45,7 +45,7 @@ export default function ProdutosPage({ searchParams }: ProductsPageProps) {
         </div>
       </section>
 
-      <section className="py-10 bg-gray-50 min-h-screen">
+      <section className="py-10 min-h-screen" style={{ backgroundColor: "var(--fundo-cinza)" }}>
         <div className="container mx-auto px-4">
           <CategoryFilter categories={categories} active={categoria} />
 

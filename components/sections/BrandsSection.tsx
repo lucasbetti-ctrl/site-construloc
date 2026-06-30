@@ -3,7 +3,7 @@ import SectionTitle from "@/components/ui/SectionTitle";
 
 export default function BrandsSection() {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16" style={{ backgroundColor: "var(--fundo-cinza)" }}>
       <div className="container mx-auto px-4">
         <SectionTitle
           title="Marcas que Trabalhamos"

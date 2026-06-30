@@ -13,7 +13,7 @@ export default function CTABanner() {
         sizes="100vw"
         className="object-cover"
       />
-      <div className="absolute inset-0 bg-primary/80" />
+      <div className="absolute inset-0 bg-primary-800/85" />
 
       <div className="relative z-10 container mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white uppercase tracking-tight">
@@ -28,7 +28,7 @@ export default function CTABanner() {
             href={generateWhatsAppLink("Olá! Gostaria de solicitar um orçamento para minha obra.")}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-accent text-white font-bold px-8 py-4 rounded-lg text-lg hover:bg-accent-600 transition-colors shadow-lg"
+            className="botao-principal gap-3 text-lg shadow-lg"
           >
             <MessageCircle size={22} aria-hidden="true" />
             Solicitar Orçamento
