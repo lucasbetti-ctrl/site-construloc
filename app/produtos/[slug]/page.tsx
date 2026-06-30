@@ -47,7 +47,7 @@ export default function ProductPage({ params }: ProductPageProps) {
     .slice(0, 3);
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: "var(--fundo-cinza)" }}>
+    <div className="min-h-screen bg-gray-50">
       <div className="container mx-auto px-4 py-10">
         {/* Breadcrumb */}
         <nav aria-label="Navegação de caminho" className="mb-6">
@@ -91,7 +91,7 @@ export default function ProductPage({ params }: ProductPageProps) {
             {/* Detalhes */}
             <div className="p-8 flex flex-col justify-between">
               <div>
-                <span className="inline-block bg-secondary text-white text-xs font-bold px-3 py-1 rounded uppercase tracking-widest mb-4">
+                <span className="inline-block bg-secondary text-primary-900 text-xs font-bold px-3 py-1 rounded uppercase tracking-widest mb-4">
                   {product.category}
                 </span>
                 <h1 className="text-2xl md:text-3xl font-black text-primary leading-tight">
@@ -105,14 +105,14 @@ export default function ProductPage({ params }: ProductPageProps) {
                   href={generateWhatsAppLink(whatsappMessage)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="botao-principal gap-3 w-full text-lg"
+                  className="inline-flex items-center justify-center gap-3 bg-accent text-white font-bold px-6 py-4 rounded-lg hover:bg-accent-600 transition-colors text-lg"
                 >
                   <MessageCircle size={20} aria-hidden="true" />
                   Solicitar Orçamento via WhatsApp
                 </a>
                 <Link
                   href="/produtos"
-                  className="botao-secundario gap-2 w-full"
+                  className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary font-semibold px-6 py-3 rounded-lg hover:bg-primary hover:text-white transition-colors"
                 >
                   <ArrowLeft size={16} aria-hidden="true" />
                   Voltar para Produtos

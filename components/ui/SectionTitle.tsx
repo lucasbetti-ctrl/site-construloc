@@ -20,7 +20,7 @@ export default function SectionTitle({
   return (
     <div className={cn(centered && "text-center", className)}>
       {badge && (
-        <span className="inline-block bg-secondary text-white text-xs font-bold px-3 py-1 rounded uppercase tracking-widest mb-3">
+        <span className="inline-block bg-secondary text-primary-900 text-xs font-bold px-3 py-1 rounded uppercase tracking-widest mb-3">
           {badge}
         </span>
       )}

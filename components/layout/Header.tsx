@@ -51,19 +51,19 @@ export default function Header() {
       )}
     >
       {/* Topbar */}
-      <div className="bg-primary-800 border-b border-primary-700">
+      <div className="bg-gray-100 border-b border-gray-200">
         <div className="container mx-auto px-4 py-2 flex flex-col sm:flex-row items-center justify-between gap-2">
-          <div className="flex items-center gap-6 text-sm text-primary-200">
+          <div className="flex items-center gap-6 text-sm text-gray-600">
             <a
               href={`mailto:${siteConfig.email}`}
-              className="flex items-center gap-1.5 hover:text-secondary transition-colors"
+              className="flex items-center gap-1.5 hover:text-primary transition-colors"
             >
               <Mail size={14} aria-hidden="true" />
               <span>{siteConfig.email}</span>
             </a>
             <a
               href={`tel:${siteConfig.phone.replace(/\D/g, "")}`}
-              className="flex items-center gap-1.5 hover:text-secondary transition-colors"
+              className="flex items-center gap-1.5 hover:text-primary transition-colors"
             >
               <Phone size={14} aria-hidden="true" />
               <span>{siteConfig.phone}</span>
@@ -76,12 +76,12 @@ export default function Header() {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Buscar produtos..."
-              className="text-sm border border-primary-600 bg-primary-700 text-white placeholder-primary-300 rounded-l px-3 py-1.5 outline-none focus:border-secondary w-48 sm:w-64"
+              className="text-sm border border-gray-300 rounded-l px-3 py-1.5 outline-none focus:border-primary w-48 sm:w-64"
               aria-label="Buscar produtos"
             />
             <button
               type="submit"
-              className="bg-secondary text-white px-3 py-1.5 rounded-r hover:bg-secondary-600 transition-colors"
+              className="bg-primary text-white px-3 py-1.5 rounded-r hover:bg-primary-600 transition-colors"
               aria-label="Pesquisar"
             >
               <Search size={16} aria-hidden="true" />
@@ -142,13 +142,13 @@ export default function Header() {
 
               {productsOpen && (
                 <ul
-                  className="absolute top-full left-0 mt-1 bg-white shadow-lg rounded border border-primary-100 min-w-[180px] py-1 z-50"
+                  className="absolute top-full left-0 mt-1 bg-white shadow-lg rounded border border-gray-100 min-w-[180px] py-1 z-50"
                   role="menu"
                 >
                   <li role="none">
                     <Link
                       href="/produtos"
-                      className="block px-4 py-2 text-sm text-primary font-semibold hover:bg-primary-50 hover:text-primary-600"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary font-medium"
                       role="menuitem"
                       onClick={() => setProductsOpen(false)}
                     >
@@ -159,7 +159,7 @@ export default function Header() {
                     <li key={cat.id} role="none">
                       <Link
                         href={`/produtos?categoria=${cat.slug}`}
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary"
                         role="menuitem"
                         onClick={() => setProductsOpen(false)}
                       >
@@ -187,7 +187,7 @@ export default function Header() {
               href={generateWhatsAppLink()}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:flex items-center gap-2 bg-secondary text-white font-semibold px-4 py-2 rounded text-sm hover:bg-secondary-600 transition-colors"
+              className="hidden sm:flex items-center gap-2 bg-accent text-white font-semibold px-4 py-2 rounded text-sm hover:bg-accent-600 transition-colors"
               aria-label="Fale conosco pelo WhatsApp"
             >
               <MessageCircle size={16} aria-hidden="true" />
@@ -207,7 +207,7 @@ export default function Header() {
 
         {/* Menu mobile */}
         {mobileMenuOpen && (
-          <div className="lg:hidden bg-primary-800 border-t border-primary-700">
+          <div className="lg:hidden bg-primary-800 border-t border-primary-600">
             <ul className="container mx-auto px-4 py-3 flex flex-col gap-1" role="list">
               {[
                 { label: "Home", href: "/" },
@@ -218,7 +218,7 @@ export default function Header() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="block text-white py-2 px-3 rounded hover:bg-primary-700 text-sm font-medium"
+                    className="block text-white py-2 px-3 rounded hover:bg-primary-600 text-sm font-medium"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {item.label}
@@ -229,7 +229,7 @@ export default function Header() {
                 <li key={cat.id}>
                   <Link
                     href={`/produtos?categoria=${cat.slug}`}
-                    className="block text-primary-200 py-2 px-6 text-sm hover:text-secondary"
+                    className="block text-primary-200 py-2 px-6 text-sm hover:text-white"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     → {cat.name}
@@ -241,7 +241,7 @@ export default function Header() {
                   href={generateWhatsAppLink()}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 bg-secondary text-white font-semibold px-4 py-2 rounded text-sm w-full justify-center hover:bg-secondary-600 transition-colors"
+                  className="flex items-center gap-2 bg-accent text-white font-semibold px-4 py-2 rounded text-sm w-full justify-center"
                 >
                   <MessageCircle size={16} aria-hidden="true" />
                   Fale no WhatsApp

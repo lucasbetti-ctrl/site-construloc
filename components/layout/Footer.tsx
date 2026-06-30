@@ -6,7 +6,7 @@ import { siteConfig } from "@/data/siteConfig";
 
 export default function Footer() {
   return (
-    <footer className="bg-primary-800 text-white">
+    <footer className="bg-primary text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Coluna 1: Logo e descrição */}
@@ -126,9 +126,9 @@ export default function Footer() {
       </div>
 
       {/* Barra inferior */}
-      <div className="bg-primary-900">
+      <div className="bg-secondary">
         <div className="container mx-auto px-4 py-3 text-center">
-          <p className="text-primary-300 text-sm font-medium">{siteConfig.copyright}</p>
+          <p className="text-primary-900 text-sm font-medium">{siteConfig.copyright}</p>
         </div>
       </div>
     </footer>

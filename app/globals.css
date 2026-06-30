@@ -3,74 +3,16 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --azul-principal: #174A7E;
-    --azul-escuro: #0D2F4F;
-    --laranja-principal: #F47C20;
-    --laranja-hover: #D9610C;
-    --fundo-claro: #F6F8FA;
-    --fundo-cinza: #E9EEF2;
-    --texto-principal: #1F2933;
-    --texto-secundario: #4B5563;
-    --branco: #FFFFFF;
-  }
-
   html {
     scroll-behavior: smooth;
   }
 
   body {
-    @apply antialiased font-sans;
-    background-color: var(--fundo-claro);
-    color: var(--texto-principal);
+    @apply bg-white text-gray-800 font-sans antialiased;
   }
 
   * {
     @apply box-border;
-  }
-}
-
-@layer components {
-  .botao-principal {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--laranja-principal);
-    color: var(--branco);
-    border: none;
-    border-radius: 6px;
-    padding: 14px 28px;
-    font-size: 16px;
-    font-weight: 700;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.2s ease;
-  }
-
-  .botao-principal:hover {
-    background-color: var(--laranja-hover);
-    transform: translateY(-2px);
-  }
-
-  .botao-secundario {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    color: var(--azul-principal);
-    border: 2px solid var(--azul-principal);
-    border-radius: 6px;
-    padding: 12px 26px;
-    font-size: 16px;
-    font-weight: 700;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.2s ease;
-  }
-
-  .botao-secundario:hover {
-    background-color: var(--azul-principal);
-    color: var(--branco);
   }
 }
 

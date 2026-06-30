@@ -15,7 +15,7 @@ export default function HeroSection() {
         sizes="100vw"
         className="object-cover"
       />
-      <div className="absolute inset-0 bg-primary/75" />
+      <div className="absolute inset-0 bg-primary/70" />
 
       <div className="relative z-10 container mx-auto px-4 py-20">
         <div className="max-w-2xl">
@@ -30,7 +30,7 @@ export default function HeroSection() {
               href={generateWhatsAppLink("Olá! Gostaria de fazer um orçamento.")}
               target="_blank"
               rel="noopener noreferrer"
-              className="botao-principal gap-3 text-lg shadow-lg"
+              className="inline-flex items-center gap-3 bg-accent text-white font-bold px-8 py-4 rounded-lg text-lg hover:bg-accent-600 transition-colors shadow-lg"
             >
               <MessageCircle size={22} aria-hidden="true" />
               Faça um Orçamento

@@ -4,7 +4,7 @@ import SectionTitle from "@/components/ui/SectionTitle";
 
 export default function FeaturedProducts() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <SectionTitle
           title="Produtos em Destaque"

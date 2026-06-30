@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function ContatoPage() {
   return (
     <>
-      <section className="py-16 bg-primary-800">
+      <section className="py-16 bg-primary">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-black text-white uppercase">Fale Conosco</h1>
           <p className="mt-4 text-primary-200 text-lg max-w-xl mx-auto">
@@ -22,7 +22,7 @@ export default function ContatoPage() {
         </div>
       </section>
 
-      <section className="py-16" style={{ backgroundColor: "var(--fundo-cinza)" }}>
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Informações de contato */}
