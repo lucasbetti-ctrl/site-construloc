@@ -1,0 +1,29 @@
+import type { Metadata } from "next";
+
+import HeroSection from "@/components/sections/HeroSection";
+import CategoriesSection from "@/components/sections/CategoriesSection";
+import AboutSection from "@/components/sections/AboutSection";
+import FeaturedProducts from "@/components/sections/FeaturedProducts";
+import CTABanner from "@/components/sections/CTABanner";
+import SecondProductGrid from "@/components/sections/SecondProductGrid";
+import BrandsSection from "@/components/sections/BrandsSection";
+import { siteConfig } from "@/data/siteConfig";
+
+export const metadata: Metadata = {
+  title: `${siteConfig.name} — Materiais de Construção`,
+  description: siteConfig.description,
+};
+
+export default function HomePage() {
+  return (
+    <>
+      <HeroSection />
+      <CategoriesSection />
+      <AboutSection />
+      <FeaturedProducts />
+      <CTABanner />
+      <SecondProductGrid />
+      <BrandsSection />
+    </>
+  );
+}
