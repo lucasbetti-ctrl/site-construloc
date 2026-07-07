@@ -51,7 +51,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
+        sans: ["var(--font-barlow)", "sans-serif"],
+        heading: ["var(--font-barlow-condensed)", "sans-serif"],
       },
     },
   },

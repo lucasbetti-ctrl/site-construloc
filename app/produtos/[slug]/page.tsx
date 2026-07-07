@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { MessageCircle, ArrowLeft } from "lucide-react";
+import { ArrowLeft, ImageIcon } from "lucide-react";
+import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
 
 import { products } from "@/data/products";
 import { generateWhatsAppLink } from "@/lib/whatsapp";
@@ -28,7 +28,6 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     openGraph: {
       title: product.name,
       description: product.description,
-      images: [{ url: product.image }],
     },
   };
 }
@@ -41,10 +40,6 @@ export default function ProductPage({ params }: ProductPageProps) {
   }
 
   const whatsappMessage = `Olá! Tenho interesse no produto: ${product.name}. Poderia me passar mais informações?`;
-
-  const relatedProducts = products
-    .filter((p) => p.categorySlug === product.categorySlug && p.id !== product.id)
-    .slice(0, 3);
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -74,47 +69,39 @@ export default function ProductPage({ params }: ProductPageProps) {
         </nav>
 
         {/* Produto */}
-        <article className="bg-white rounded-xl shadow-sm overflow-hidden">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
+        <article className="bg-white rounded-xl shadow-sm overflow-hidden max-w-2xl">
+          <div className="flex flex-col md:flex-row md:items-start">
             {/* Imagem */}
-            <div className="relative aspect-square bg-gray-100">
-              <Image
-                src={product.image}
-                alt={product.name}
-                fill
-                priority
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover"
-              />
+            <div className="relative w-full md:w-[320px] shrink-0 aspect-square bg-gray-100 flex items-center justify-center p-6">
+              <ImageIcon className="w-16 h-16 text-gray-300" strokeWidth={1.5} />
             </div>
 
-            {/* Detalhes */}
-            <div className="p-8 flex flex-col justify-between">
-              <div>
-                <span className="inline-block bg-secondary text-primary-900 text-xs font-bold px-3 py-1 rounded uppercase tracking-widest mb-4">
-                  {product.category}
-                </span>
-                <h1 className="text-2xl md:text-3xl font-black text-primary leading-tight">
-                  {product.name}
-                </h1>
-                <p className="mt-4 text-gray-600 leading-relaxed">{product.description}</p>
-              </div>
 
-              <div className="mt-8 flex flex-col gap-3">
+            {/* Detalhes */}
+            <div className="p-8 flex flex-col gap-3">
+              <span className="inline-block self-start bg-secondary text-primary-900 text-xs font-bold px-3 py-1 rounded uppercase tracking-widest">
+                {product.category}
+              </span>
+              <h1 className="text-2xl md:text-3xl font-black text-primary leading-tight">
+                {product.name}
+              </h1>
+              <p className="text-gray-600 leading-relaxed">{product.description}</p>
+
+              <div className="pt-3 flex flex-wrap items-center gap-4">
                 <a
                   href={generateWhatsAppLink(whatsappMessage)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-3 bg-accent text-white font-bold px-6 py-4 rounded-lg hover:bg-accent-600 transition-colors text-lg"
+                  className="inline-flex items-center gap-2 bg-accent text-white font-semibold text-sm px-5 py-2.5 rounded-lg hover:bg-accent-600 transition-colors"
                 >
-                  <MessageCircle size={20} aria-hidden="true" />
-                  Solicitar Orçamento via WhatsApp
+                  <WhatsAppIcon size={16} />
+                  Solicitar Orçamento
                 </a>
                 <Link
                   href="/produtos"
-                  className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary font-semibold px-6 py-3 rounded-lg hover:bg-primary hover:text-white transition-colors"
+                  className="inline-flex items-center gap-1.5 text-primary font-medium text-sm hover:underline"
                 >
-                  <ArrowLeft size={16} aria-hidden="true" />
+                  <ArrowLeft size={14} aria-hidden="true" />
                   Voltar para Produtos
                 </Link>
               </div>
@@ -122,34 +109,6 @@ export default function ProductPage({ params }: ProductPageProps) {
           </div>
         </article>
 
-        {/* Produtos relacionados */}
-        {relatedProducts.length > 0 && (
-          <section className="mt-14">
-            <h2 className="text-2xl font-bold text-primary mb-6">Produtos Relacionados</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {relatedProducts.map((related) => (
-                <Link
-                  key={related.id}
-                  href={`/produtos/${related.slug}`}
-                  className="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-md transition-shadow flex flex-col"
-                >
-                  <div className="relative aspect-square bg-gray-100">
-                    <Image
-                      src={related.image}
-                      alt={related.name}
-                      fill
-                      sizes="(max-width: 640px) 100vw, 33vw"
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="p-4">
-                    <h3 className="font-semibold text-gray-800 text-sm">{related.name}</h3>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </section>
-        )}
       </div>
     </div>
   );

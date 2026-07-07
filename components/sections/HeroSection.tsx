@@ -1,21 +1,48 @@
+"use client";
+
 import Image from "next/image";
-import { MessageCircle } from "lucide-react";
+import { useState, useEffect } from "react";
 
 import { siteConfig } from "@/data/siteConfig";
 import { generateWhatsAppLink } from "@/lib/whatsapp";
+import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
+
+const slides = [
+  { src: "/images/hero/Capa.avif", alt: "Obra de construção civil" },
+  { src: "/images/hero/Capa2.avif", alt: "Equipamentos para construção" },
+];
 
 export default function HeroSection() {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % slides.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section className="relative flex items-center min-h-[90vh] overflow-hidden">
-      <Image
-        src="https://picsum.photos/seed/construction/1920/1080"
-        alt="Obra de construção civil"
-        fill
-        priority
-        sizes="100vw"
-        className="object-cover"
-      />
-      <div className="absolute inset-0 bg-primary/70" />
+      {slides.map((slide, i) => (
+        <div
+          key={slide.src}
+          className="absolute inset-0 transition-opacity duration-1000"
+          style={{ opacity: i === current ? 1 : 0 }}
+        >
+          <Image
+            src={slide.src}
+            alt={slide.alt}
+            fill
+            priority={i === 0}
+            sizes="100vw"
+            className="object-cover scale-100 transition-transform duration-[8000ms] ease-out"
+          style={{ transform: i === current ? "scale(1.08)" : "scale(1)" }}
+          />
+        </div>
+      ))}
+
+      <div className="absolute inset-0 bg-primary/40" />
 
       <div className="relative z-10 container mx-auto px-4 py-20">
         <div className="max-w-2xl">
@@ -32,11 +59,12 @@ export default function HeroSection() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-accent text-white font-bold px-8 py-4 rounded-lg text-lg hover:bg-accent-600 transition-colors shadow-lg"
             >
-              <MessageCircle size={22} aria-hidden="true" />
+              <WhatsAppIcon size={22} />
               Faça um Orçamento
             </a>
           </div>
         </div>
+
       </div>
     </section>
   );

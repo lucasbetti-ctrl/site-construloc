@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { MessageCircle } from "lucide-react";
+import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
 
 import { generateWhatsAppLink } from "@/lib/whatsapp";
 
@@ -30,7 +30,7 @@ export default function CTABanner() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-accent text-white font-bold px-8 py-4 rounded-lg text-lg hover:bg-accent-600 transition-colors shadow-lg"
           >
-            <MessageCircle size={22} aria-hidden="true" />
+            <WhatsAppIcon size={22} />
             Solicitar Orçamento
           </a>
         </div>

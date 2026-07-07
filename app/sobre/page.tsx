@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { MessageCircle } from "lucide-react";
+import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
 
 import { siteConfig } from "@/data/siteConfig";
 import { generateWhatsAppLink } from "@/lib/whatsapp";
 import SectionTitle from "@/components/ui/SectionTitle";
+import AnimatedCounter from "@/components/ui/AnimatedCounter";
+import AboutHero from "@/components/sections/AboutHero";
+import FadeIn from "@/components/ui/FadeIn";
 
 export const metadata: Metadata = {
   title: "Sobre Nós",
@@ -33,31 +36,23 @@ export default function SobrePage() {
   return (
     <>
       {/* Hero da página */}
-      <section className="relative py-20 bg-primary overflow-hidden">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-black text-white uppercase">Sobre Nós</h1>
-          <p className="mt-4 text-primary-200 text-lg max-w-2xl mx-auto">
-            Conheça nossa história, missão e o que nos move a ser a melhor escolha para a sua obra.
-          </p>
-        </div>
-      </section>
+      <AboutHero />
 
       {/* História */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <FadeIn direction="left">
               <SectionTitle
                 badge="Nossa História"
                 title={siteConfig.about.title}
-                subtitle={siteConfig.about.description}
                 className="mb-6"
               />
+              <p className="text-gray-600 leading-relaxed mb-4">
+                A Construloc nasceu em 1991 da paixão por ajudar pessoas a realizarem seus sonhos de construção e reforma. Com mais de três décadas no mercado, somos referência em qualidade de produtos e atendimento personalizado. Nossa equipe especializada está sempre pronta para orientar você na escolha dos melhores materiais para cada etapa da sua obra.
+              </p>
               <p className="text-gray-600 leading-relaxed">
-                Fundada em 2004, a {siteConfig.name} começou como uma pequena loja de bairro com o
-                sonho de oferecer qualidade acessível. Ao longo dos anos, crescemos e nos tornamos
-                referência regional, mantendo sempre o compromisso com o cliente e a excelência nos
-                produtos que oferecemos.
+                Começamos como uma pequena loja de bairro com o sonho de oferecer qualidade acessível. Ao longo dos anos, crescemos e nos tornamos referência regional, mantendo sempre o compromisso com o cliente e a excelência nos produtos que oferecemos.
               </p>
               <a
                 href={generateWhatsAppLink("Olá! Gostaria de saber mais sobre a Construloc.")}
@@ -65,19 +60,19 @@ export default function SobrePage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 mt-8 bg-accent text-white font-bold px-6 py-3 rounded-lg hover:bg-accent-600 transition-colors"
               >
-                <MessageCircle size={18} aria-hidden="true" />
+                <WhatsAppIcon size={18} />
                 Fale Conosco
               </a>
-            </div>
-            <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg">
+            </FadeIn>
+            <FadeIn direction="right" delay={0.15} className="relative aspect-video rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="https://picsum.photos/seed/aboutpage/800/500"
-                alt="Equipe e loja da Construloc"
+                src="/images/faxada.jpg"
+                alt="Fachada da Construloc"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
               />
-            </div>
+            </FadeIn>
           </div>
         </div>
       </section>
@@ -109,17 +104,30 @@ export default function SobrePage() {
       <section className="py-16 bg-primary">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {[
-              { number: "20+", label: "Anos de experiência" },
-              { number: "5.000+", label: "Clientes atendidos" },
-              { number: "3.000+", label: "Produtos no catálogo" },
-              { number: "8", label: "Marcas parceiras" },
-            ].map((stat) => (
-              <div key={stat.label}>
-                <p className="text-4xl font-black text-secondary">{stat.number}</p>
-                <p className="text-primary-200 text-sm mt-1">{stat.label}</p>
-              </div>
-            ))}
+            <div>
+              <p className="text-4xl font-black text-secondary">
+                <AnimatedCounter target={30} suffix="+" />
+              </p>
+              <p className="text-primary-200 text-sm mt-1">Anos de experiência</p>
+            </div>
+            <div>
+              <p className="text-4xl font-black text-secondary">
+                <AnimatedCounter target={2000} suffix="+" separator />
+              </p>
+              <p className="text-primary-200 text-sm mt-1">Clientes atendidos</p>
+            </div>
+            <div>
+              <p className="text-4xl font-black text-secondary">
+                <AnimatedCounter target={150} suffix="+" />
+              </p>
+              <p className="text-primary-200 text-sm mt-1">Produtos no catálogo</p>
+            </div>
+            <div>
+              <p className="text-4xl font-black text-secondary">
+                <AnimatedCounter target={8} />
+              </p>
+              <p className="text-primary-200 text-sm mt-1">Marcas parceiras</p>
+            </div>
           </div>
         </div>
       </section>

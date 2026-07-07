@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Phone, Mail, MapPin, MessageCircle, ExternalLink } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
+import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
 
 import { siteConfig } from "@/data/siteConfig";
 import { generateWhatsAppLink } from "@/lib/whatsapp";
@@ -13,10 +14,10 @@ export const metadata: Metadata = {
 export default function ContatoPage() {
   return (
     <>
-      <section className="py-16 bg-primary">
+      <section className="py-16 bg-gray-200">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-black text-white uppercase">Fale Conosco</h1>
-          <p className="mt-4 text-primary-200 text-lg max-w-xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-black text-primary uppercase">Fale Conosco</h1>
+          <p className="mt-4 text-gray-500 text-lg max-w-xl mx-auto">
             Entre em contato pelos nossos canais de atendimento. Respondemos rapidamente!
           </p>
         </div>
@@ -24,15 +25,14 @@ export default function ContatoPage() {
 
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <SectionTitle
+            title="Informações de Contato"
+            subtitle="Escolha o canal mais conveniente para você."
+            className="mb-8"
+          />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Informações de contato */}
             <div>
-              <SectionTitle
-                title="Informações de Contato"
-                subtitle="Escolha o canal mais conveniente para você."
-                className="mb-8"
-              />
-
               <ul className="space-y-5">
                 <li>
                   <a
@@ -42,7 +42,7 @@ export default function ContatoPage() {
                     className="flex items-start gap-4 p-5 bg-white rounded-xl border border-gray-200 hover:border-accent hover:shadow-sm transition-all group"
                   >
                     <span className="w-11 h-11 rounded-full bg-accent/10 flex items-center justify-center shrink-0 group-hover:bg-accent group-hover:text-white transition-colors">
-                      <MessageCircle size={20} className="text-accent group-hover:text-white" aria-hidden="true" />
+                      <WhatsAppIcon size={20} className="text-accent group-hover:text-white" />
                     </span>
                     <div>
                       <p className="font-semibold text-gray-800">WhatsApp</p>
@@ -122,44 +122,6 @@ export default function ContatoPage() {
                 </ul>
               </div>
 
-              <div className="bg-white rounded-xl border border-gray-200 p-8">
-                <h2 className="text-xl font-bold text-primary mb-5">Redes Sociais</h2>
-                <div className="flex flex-col gap-3">
-                  {siteConfig.social.instagram && (
-                    <a
-                      href={siteConfig.social.instagram}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-3 text-gray-700 hover:text-primary transition-colors"
-                    >
-                      <ExternalLink size={18} aria-hidden="true" />
-                      <span className="text-sm font-medium">Instagram</span>
-                    </a>
-                  )}
-                  {siteConfig.social.facebook && (
-                    <a
-                      href={siteConfig.social.facebook}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-3 text-gray-700 hover:text-primary transition-colors"
-                    >
-                      <ExternalLink size={18} aria-hidden="true" />
-                      <span className="text-sm font-medium">Facebook</span>
-                    </a>
-                  )}
-                  {siteConfig.social.youtube && (
-                    <a
-                      href={siteConfig.social.youtube}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-3 text-gray-700 hover:text-primary transition-colors"
-                    >
-                      <ExternalLink size={18} aria-hidden="true" />
-                      <span className="text-sm font-medium">YouTube</span>
-                    </a>
-                  )}
-                </div>
-              </div>
             </div>
           </div>
         </div>

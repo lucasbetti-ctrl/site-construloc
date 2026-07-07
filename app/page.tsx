@@ -5,7 +5,6 @@ import CategoriesSection from "@/components/sections/CategoriesSection";
 import AboutSection from "@/components/sections/AboutSection";
 import FeaturedProducts from "@/components/sections/FeaturedProducts";
 import CTABanner from "@/components/sections/CTABanner";
-import SecondProductGrid from "@/components/sections/SecondProductGrid";
 import BrandsSection from "@/components/sections/BrandsSection";
 import { siteConfig } from "@/data/siteConfig";
 
@@ -22,7 +21,6 @@ export default function HomePage() {
       <AboutSection />
       <FeaturedProducts />
       <CTABanner />
-      <SecondProductGrid />
       <BrandsSection />
     </>
   );

@@ -22,8 +22,8 @@ export default function CategoryCard({ category }: CategoryCardProps) {
       />
       <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent" />
       <div className="absolute bottom-0 left-0 right-0 p-5">
-        <h3 className="text-white font-bold text-base leading-tight">{category.name}</h3>
-        <span className="inline-block mt-2 text-secondary text-xs font-semibold">
+        <h3 className="text-white font-bold text-lg leading-tight">{category.name}</h3>
+        <span className="inline-block mt-2 text-secondary text-sm font-semibold">
           Ver produtos →
         </span>
       </div>

@@ -11,6 +11,11 @@
     @apply bg-white text-gray-800 font-sans antialiased;
   }
 
+  h1, h2, h3 {
+    font-family: var(--font-barlow-condensed), sans-serif;
+    letter-spacing: 0.01em;
+  }
+
   * {
     @apply box-border;
   }
@@ -21,3 +26,13 @@
     text-wrap: balance;
   }
 }
+
+@keyframes brands-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-brands-scroll {
+  animation: brands-scroll 36s linear infinite;
+}
+

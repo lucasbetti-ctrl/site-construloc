@@ -23,41 +23,6 @@ export default function Footer() {
             <p className="text-primary-200 text-sm leading-relaxed">
               {siteConfig.description}
             </p>
-            <div className="flex items-center gap-3 mt-5">
-              {siteConfig.social.instagram && (
-                <a
-                  href={siteConfig.social.instagram}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary-300 hover:text-secondary transition-colors text-xs font-semibold"
-                  aria-label="Instagram da Construloc"
-                >
-                  Instagram
-                </a>
-              )}
-              {siteConfig.social.facebook && (
-                <a
-                  href={siteConfig.social.facebook}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary-300 hover:text-secondary transition-colors text-xs font-semibold"
-                  aria-label="Facebook da Construloc"
-                >
-                  Facebook
-                </a>
-              )}
-              {siteConfig.social.youtube && (
-                <a
-                  href={siteConfig.social.youtube}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary-300 hover:text-secondary transition-colors text-xs font-semibold"
-                  aria-label="YouTube da Construloc"
-                >
-                  YouTube
-                </a>
-              )}
-            </div>
           </div>
 
           {/* Coluna 2: Navegação */}

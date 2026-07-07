@@ -4,7 +4,8 @@ import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { Mail, Phone, Search, MessageCircle, ChevronDown, Menu, X } from "lucide-react";
+import { Mail, Phone, Search, ChevronDown, Menu, X } from "lucide-react";
+import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
 
 import { siteConfig } from "@/data/siteConfig";
 import { categories } from "@/data/categories";
@@ -190,7 +191,7 @@ export default function Header() {
               className="hidden sm:flex items-center gap-2 bg-accent text-white font-semibold px-4 py-2 rounded text-sm hover:bg-accent-600 transition-colors"
               aria-label="Fale conosco pelo WhatsApp"
             >
-              <MessageCircle size={16} aria-hidden="true" />
+              <WhatsAppIcon size={16} />
               <span>Fale no WhatsApp</span>
             </a>
 
@@ -243,7 +244,7 @@ export default function Header() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 bg-accent text-white font-semibold px-4 py-2 rounded text-sm w-full justify-center"
                 >
-                  <MessageCircle size={16} aria-hidden="true" />
+                  <WhatsAppIcon size={16} />
                   Fale no WhatsApp
                 </a>
               </li>
