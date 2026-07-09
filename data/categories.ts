@@ -26,7 +26,7 @@ export const categories: Category[] = [
     id: "4",
     name: "Plataformas Elevatórias",
     slug: "plataformas-elevatorias",
-    image: "/images/categories/Plataforma.jpg",
+    image: "/images/categories/manitou-160-atj.jpg",
     description: "Plataformas elevatórias e andaimes para trabalhos em altura com segurança.",
   },
 ];
