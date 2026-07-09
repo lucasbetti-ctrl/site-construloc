@@ -1,5 +1,5 @@
+import Image from "next/image";
 import Link from "next/link";
-import { ImageIcon } from "lucide-react";
 
 import type { Product } from "@/types";
 
@@ -10,8 +10,14 @@ interface ProductCardProps {
 export default function ProductCard({ product }: ProductCardProps) {
   return (
     <article className="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-md transition-shadow duration-200 flex flex-col">
-      <div className="relative aspect-[16/9] w-full overflow-hidden bg-gray-100 flex items-center justify-center">
-        <ImageIcon className="w-10 h-10 text-gray-300" strokeWidth={1.5} />
+      <div className="relative aspect-square w-full overflow-hidden bg-white p-6 border-b border-gray-100">
+        <Image
+          src={product.image}
+          alt={product.name}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+          className="object-contain hover:scale-105 transition-transform duration-300"
+        />
       </div>
       <div className="p-4 flex flex-col flex-1">
         <span className="text-sm text-primary-500 font-medium uppercase tracking-wide mb-1">

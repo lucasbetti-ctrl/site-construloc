@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, ImageIcon } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
 
 import { products } from "@/data/products";
@@ -72,8 +73,14 @@ export default function ProductPage({ params }: ProductPageProps) {
         <article className="bg-white rounded-xl shadow-sm overflow-hidden max-w-2xl">
           <div className="flex flex-col md:flex-row md:items-start">
             {/* Imagem */}
-            <div className="relative w-full md:w-[320px] shrink-0 aspect-square bg-gray-100 flex items-center justify-center p-6">
-              <ImageIcon className="w-16 h-16 text-gray-300" strokeWidth={1.5} />
+            <div className="relative w-full md:w-[320px] shrink-0 aspect-square bg-white p-6">
+              <Image
+                src={product.image}
+                alt={product.name}
+                fill
+                sizes="(max-width: 768px) 100vw, 320px"
+                className="object-contain"
+              />
             </div>
 
 
