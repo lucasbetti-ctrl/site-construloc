@@ -6,6 +6,7 @@ import { siteConfig } from "@/data/siteConfig";
 import ProductCard from "@/components/ui/ProductCard";
 import SectionTitle from "@/components/ui/SectionTitle";
 import CategoryFilter from "./CategoryFilter";
+import ProductsHero from "./ProductsHero";
 
 export const metadata: Metadata = {
   title: "Produtos",
@@ -32,18 +33,10 @@ export default function ProdutosPage({ searchParams }: ProductsPageProps) {
 
   return (
     <>
-      <section className="py-12 bg-primary">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-black text-white uppercase">
-            {activeCategory ? activeCategory.name : "Todos os Produtos"}
-          </h1>
-          {busca && (
-            <p className="text-primary-200 mt-2">
-              Resultados para: <strong className="text-secondary">&ldquo;{busca}&rdquo;</strong>
-            </p>
-          )}
-        </div>
-      </section>
+      <ProductsHero
+        title={activeCategory ? activeCategory.name : "Todos os Produtos"}
+        busca={busca}
+      />
 
       <section className="py-10 bg-gray-50 min-h-screen">
         <div className="container mx-auto px-4">

@@ -144,6 +144,105 @@ export const products: Product[] = [
       "Miniescavadeira compacta sobre esteiras, ideal para escavações em espaços reduzidos, valas, fundações e paisagismo.",
     featured: false,
   },
+  {
+    id: "26",
+    name: "Plataforma Articulada Manitou MAN'GO 12",
+    slug: "plataforma-articulada-manitou-mango-12",
+    category: "Plataformas Elevatórias",
+    categorySlug: "plataformas-elevatorias",
+    image: "/images/products/603483-studio_mewp_mango_12_manitou_003.jpg.jpeg",
+    description:
+      "Plataforma articulada elétrica de pequeno porte, compacta e de fácil manobra, ideal para manutenção e montagens em espaços internos e áreas restritas.",
+    featured: false,
+  },
+  {
+    id: "27",
+    name: "Plataforma Tesoura Genie GS-1932m",
+    slug: "plataforma-tesoura-genie-gs-1932m",
+    category: "Plataformas Elevatórias",
+    categorySlug: "plataformas-elevatorias",
+    image: "/images/products/GS-1932m_Stowed.jpg.jpeg",
+    description:
+      "Plataforma elevatória tipo tesoura, elétrica e compacta, indicada para trabalhos internos em altura com boa capacidade de carga.",
+    featured: false,
+  },
+  {
+    id: "28",
+    name: "Plataforma Tesoura Genie GS-3246",
+    slug: "plataforma-tesoura-genie-gs-3246",
+    category: "Plataformas Elevatórias",
+    categorySlug: "plataformas-elevatorias",
+    image: "/images/products/GS-3246_Cut-out_stowed_extended.jpg.jpeg",
+    description:
+      "Plataforma elevatória tipo tesoura, elétrica, com raio de giro interno zero, ideal para ambientes internos e externos e corredores estreitos.",
+    featured: false,
+  },
+  {
+    id: "29",
+    name: "Plataforma Tesoura Genie GS-4046",
+    slug: "plataforma-tesoura-genie-gs-4046",
+    category: "Plataformas Elevatórias",
+    categorySlug: "plataformas-elevatorias",
+    image: "/images/products/GS-4046_Cut-out_stowed_no_shadow.jpg.jpeg",
+    description:
+      "Plataforma elevatória tipo tesoura, elétrica, de grande altura de trabalho, indicada para manutenção industrial e obras em ambientes internos.",
+    featured: false,
+  },
+  {
+    id: "30",
+    name: "Plataforma Articulada Genie Z-45/25J RT",
+    slug: "plataforma-articulada-genie-z-45-25j-rt",
+    category: "Plataformas Elevatórias",
+    categorySlug: "plataformas-elevatorias",
+    image: "/images/products/Z-45-25J-1_transparent.png",
+    description:
+      "Plataforma articulada a diesel, com tração 4x4, indicada para trabalhos em altura em terrenos irregulares e áreas externas de difícil acesso.",
+    featured: false,
+  },
+  {
+    id: "31",
+    name: "Plataforma Articulada Genie Z-45/25J DC",
+    slug: "plataforma-articulada-genie-z-45-25j-dc",
+    category: "Plataformas Elevatórias",
+    categorySlug: "plataformas-elevatorias",
+    image: "/images/products/Z-45-25_J_DC_Cut-out_1.jpg.jpeg",
+    description:
+      "Plataforma articulada elétrica, com lança e jib articulado, ideal para trabalhos em altura internos e externos com operação silenciosa.",
+    featured: false,
+  },
+  {
+    id: "32",
+    name: "Plataforma Articulada Genie Z-45 DC",
+    slug: "plataforma-articulada-genie-z-45-dc",
+    category: "Plataformas Elevatórias",
+    categorySlug: "plataformas-elevatorias",
+    image: "/images/products/Z-45_DC.png",
+    description:
+      "Plataforma articulada elétrica, ecológica e silenciosa, com jib articulado e rotação da plataforma para maior precisão de posicionamento.",
+    featured: false,
+  },
+  {
+    id: "33",
+    name: "Plataforma Articulada Genie Z-34/22 N",
+    slug: "plataforma-articulada-genie-z-34-22-n",
+    category: "Plataformas Elevatórias",
+    categorySlug: "plataformas-elevatorias",
+    image: "/images/products/z-3422_cutout-1.jpg.jpeg",
+    description:
+      "Plataforma articulada elétrica compacta, indicada para trabalhos internos e externos em altura com boa mobilidade em espaços reduzidos.",
+    featured: false,
+  },
+  {
+    id: "34",
+    name: "Plataforma Articulada Genie Z-80/60",
+    slug: "plataforma-articulada-genie-z-80-60",
+    category: "Plataformas Elevatórias",
+    categorySlug: "plataformas-elevatorias",
+    image: "/images/products/z-8060_cutout-1.jpg.jpeg",
+    description:
+      "Plataforma articulada a diesel de grande alcance, com lança dupla articulada, ideal para trabalhos em altura elevada em obras e áreas externas.",
+    featured: false,
+  },
 ];
 
 export const featuredProducts = products.filter((p) => p.featured);
