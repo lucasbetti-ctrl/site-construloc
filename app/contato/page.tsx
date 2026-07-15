@@ -47,7 +47,7 @@ export default function ContatoPage() {
                     <div>
                       <p className="font-semibold text-gray-800">WhatsApp</p>
                       <p className="text-gray-500 text-sm mt-0.5">Atendimento rápido</p>
-                      <p className="text-primary font-medium mt-1">{siteConfig.phone}</p>
+                      <p className="text-primary font-medium mt-1">{siteConfig.phoneSecondary}</p>
                     </div>
                   </a>
                 </li>
@@ -63,7 +63,10 @@ export default function ContatoPage() {
                     <div>
                       <p className="font-semibold text-gray-800">Telefone</p>
                       <p className="text-gray-500 text-sm mt-0.5">Loja física</p>
-                      <p className="text-primary font-medium mt-1">{siteConfig.phone}</p>
+                      <p className="text-primary font-medium mt-1">
+                        {siteConfig.phone}
+                        {siteConfig.phoneSecondary && ` / ${siteConfig.phoneSecondary}`}
+                      </p>
                     </div>
                   </a>
                 </li>

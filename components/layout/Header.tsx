@@ -67,7 +67,10 @@ export default function Header() {
               className="flex items-center gap-1.5 hover:text-primary transition-colors"
             >
               <Phone size={14} aria-hidden="true" />
-              <span>{siteConfig.phone}</span>
+              <span>
+                {siteConfig.phone}
+                {siteConfig.phoneSecondary && ` / ${siteConfig.phoneSecondary}`}
+              </span>
             </a>
           </div>
 
@@ -110,7 +113,7 @@ export default function Header() {
             <li>
               <Link
                 href="/"
-                className="relative text-white font-medium px-3 py-2 text-sm tracking-wide group"
+                className="relative text-white font-medium px-3 py-2 text-base tracking-wide group"
               >
                 Home
                 <span className="absolute bottom-0 left-3 right-3 h-0.5 bg-secondary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-full" />
@@ -119,7 +122,7 @@ export default function Header() {
             <li>
               <Link
                 href="/sobre"
-                className="relative text-white font-medium px-3 py-2 text-sm tracking-wide group"
+                className="relative text-white font-medium px-3 py-2 text-base tracking-wide group"
               >
                 Sobre
                 <span className="absolute bottom-0 left-3 right-3 h-0.5 bg-secondary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-full" />
@@ -128,7 +131,7 @@ export default function Header() {
             <li ref={dropdownRef} className="relative">
               <button
                 onClick={() => setProductsOpen((o) => !o)}
-                className="relative flex items-center gap-1 text-white font-medium px-3 py-2 text-sm tracking-wide group"
+                className="relative flex items-center gap-1 text-white font-medium px-3 py-2 text-base tracking-wide group"
                 aria-expanded={productsOpen}
                 aria-haspopup="true"
               >
@@ -174,7 +177,7 @@ export default function Header() {
             <li>
               <Link
                 href="/contato"
-                className="relative text-white font-medium px-3 py-2 text-sm tracking-wide group"
+                className="relative text-white font-medium px-3 py-2 text-base tracking-wide group"
               >
                 Contato
                 <span className="absolute bottom-0 left-3 right-3 h-0.5 bg-secondary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-full" />

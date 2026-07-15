@@ -18,12 +18,12 @@ const values = [
   {
     title: "Missão",
     description:
-      "Oferecer materiais de construção de alta qualidade com atendimento especializado, ajudando nossos clientes a realizarem suas obras com eficiência e segurança.",
+      "Oferecer equipamentos para construção e manutenção de alta qualidade com atendimento especializado, ajudando nossos clientes a realizarem suas obras com eficiência e segurança.",
   },
   {
     title: "Visão",
     description:
-      "Ser a loja de materiais de construção mais confiável e reconhecida da região, expandindo nossa presença e referência no mercado.",
+      "Ser a locadora de equipamentos mais confiável e reconhecida da região, expandindo nossa presença e referência no mercado.",
   },
   {
     title: "Valores",

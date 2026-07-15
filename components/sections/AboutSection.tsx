@@ -34,7 +34,6 @@ export default function AboutSection() {
                 "Máquinas modernas de última geração",
                 "Redução de custo com ativo imobilizado",
                 "Confiabilidade e solidez de uma empresa especializada",
-                "Gastos com aluguel dedutíveis do I.R tributados pelo lucro real",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2 text-base text-gray-600">
                   <span className="mt-0.5 text-secondary font-bold text-base leading-none">✓</span>

@@ -59,12 +59,22 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-2.5 text-primary-200 text-sm">
                 <Phone size={16} className="mt-0.5 shrink-0 text-secondary" aria-hidden="true" />
-                <a
-                  href={`tel:${siteConfig.phone.replace(/\D/g, "")}`}
-                  className="hover:text-secondary transition-colors"
-                >
-                  {siteConfig.phone}
-                </a>
+                <div className="flex flex-col">
+                  <a
+                    href={`tel:${siteConfig.phone.replace(/\D/g, "")}`}
+                    className="hover:text-secondary transition-colors"
+                  >
+                    {siteConfig.phone}
+                  </a>
+                  {siteConfig.phoneSecondary && (
+                    <a
+                      href={`tel:${siteConfig.phoneSecondary.replace(/\D/g, "")}`}
+                      className="hover:text-secondary transition-colors"
+                    >
+                      {siteConfig.phoneSecondary}
+                    </a>
+                  )}
+                </div>
               </li>
               <li className="flex items-start gap-2.5 text-primary-200 text-sm">
                 <Mail size={16} className="mt-0.5 shrink-0 text-secondary" aria-hidden="true" />

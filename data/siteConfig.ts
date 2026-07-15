@@ -4,15 +4,16 @@ export const siteConfig: SiteConfig = {
   name: "Construloc",
   description:
     "Sua loja completa de materiais de construção, ferramentas e equipamentos. Qualidade e tradição a serviço da sua obra.",
-  phone: "(11) 3456-7890",
+  phone: "(11) 4538-8065",
+  phoneSecondary: "(11) 4538-8064",
   whatsapp: "5511934567890",
-  email: "contato@construloc.com.br",
+  email: "sac@construloc.com.br",
   address: {
-    street: "Av. das Construções, 1234",
-    city: "São Paulo",
+    street: "Av. Antonio Galvão de Camargo, 580 - Jd. Lucca",
+    city: "Itatiba",
     state: "SP",
-    zip: "01234-567",
-    full: "Av. das Construções, 1234 — São Paulo/SP — CEP 01234-567",
+    zip: "13255-180",
+    full: "Av. Antonio Galvão de Camargo, 580 - Jd. Lucca — Itatiba/SP — CEP 13255-180",
   },
   social: {
     instagram: "https://instagram.com/construloc",
