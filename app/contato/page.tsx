@@ -114,8 +114,7 @@ export default function ContatoPage() {
                 <ul className="space-y-3 text-sm">
                   {[
                     { days: "Segunda a Sexta", hours: "07h00 às 18h00" },
-                    { days: "Sábado", hours: "07h00 às 13h00" },
-                    { days: "Domingo e Feriados", hours: "Fechado" },
+                    { days: "Sábado, Domingo e Feriados", hours: "Fechado" },
                   ].map((item) => (
                     <li key={item.days} className="flex justify-between">
                       <span className="text-gray-600">{item.days}</span>
