@@ -562,6 +562,39 @@ export const products: Product[] = [
       "Rolo compactador de valas (trench roller) Wacker Neuson, com dois tambores pé de carneiro, indicado para compactação em valas e locais de acesso restrito.",
     featured: false,
   },
+  {
+    id: "64",
+    name: "Lixadeira de Parede/Gesso Stanley",
+    slug: "lixadeira-de-parede-gesso-stanley",
+    category: "Equipamentos Leves",
+    categorySlug: "equipamentos-leves",
+    image: "/images/products/lixadeira-de-parede-gesso-stanley.jpeg",
+    description:
+      "Lixadeira de parede Stanley com haste telescópica e sistema de aspiração acoplado, indicada para lixamento de drywall, gesso e massa corrida em tetos e paredes altas.",
+    featured: false,
+  },
+  {
+    id: "65",
+    name: "Aspirador de Pó e Água DeWalt",
+    slug: "aspirador-de-po-e-agua-dewalt",
+    category: "Equipamentos Leves",
+    categorySlug: "equipamentos-leves",
+    image: "/images/products/aspirador-de-po-e-agua-dewalt.jpeg",
+    description:
+      "Aspirador industrial de pó e água (wet/dry vac) DeWalt, sobre rodízios, indicado para limpeza pesada em obras e canteiros.",
+    featured: false,
+  },
+  {
+    id: "66",
+    name: "Lixadeira de Piso Husqvarna PG 280 S",
+    slug: "lixadeira-de-piso-husqvarna-pg-280-s",
+    category: "Equipamentos Leves",
+    categorySlug: "equipamentos-leves",
+    image: "/images/products/lixadeira-de-piso-husqvarna-pg-280-s.jpeg",
+    description:
+      "Lixadeira/politriz de piso manual Husqvarna, indicada para preparação, lixamento e polimento de pisos de concreto.",
+    featured: false,
+  },
 ];
 
 export const featuredProducts = products.filter((p) => p.featured);
