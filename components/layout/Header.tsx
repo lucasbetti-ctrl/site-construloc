@@ -71,7 +71,7 @@ export default function Header() {
 
           {/* Links desktop */}
           <ul
-            className="hidden lg:flex items-center gap-2 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+            className="hidden lg:flex items-center gap-2 flex-1 justify-center min-w-0"
             role="list"
           >
             <li>
