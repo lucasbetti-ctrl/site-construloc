@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 
 import { siteConfig } from "@/data/siteConfig";
 import SectionTitle from "@/components/ui/SectionTitle";
 import AnimatedCounter from "@/components/ui/AnimatedCounter";
 import AboutHero from "@/components/sections/AboutHero";
+import AboutCarousel from "@/components/sections/AboutCarousel";
 import SobreWhatsAppButton from "@/components/sections/SobreWhatsAppButton";
 import FadeIn from "@/components/ui/FadeIn";
 
@@ -56,13 +56,7 @@ export default function SobrePage() {
               <SobreWhatsAppButton />
             </FadeIn>
             <FadeIn direction="right" delay={0.15} className="relative aspect-video rounded-xl overflow-hidden shadow-lg">
-              <Image
-                src="/images/faxada_1.jpeg"
-                alt="Fachada da Construloc"
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
-              />
+              <AboutCarousel />
             </FadeIn>
           </div>
         </div>
