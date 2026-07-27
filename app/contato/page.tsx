@@ -57,19 +57,29 @@ export default function ContatoPage() {
                 </li>
 
                 <li>
-                  <a
-                    href={`mailto:${siteConfig.email}`}
-                    className="flex items-start gap-4 p-5 bg-white rounded-xl border border-gray-200 hover:border-primary hover:shadow-sm transition-all group"
-                  >
-                    <span className="w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary transition-colors">
-                      <Mail size={20} className="text-primary group-hover:text-white" aria-hidden="true" />
+                  <div className="flex items-start gap-4 p-5 bg-white rounded-xl border border-gray-200">
+                    <span className="w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                      <Mail size={20} className="text-primary" aria-hidden="true" />
                     </span>
                     <div>
                       <p className="font-semibold text-gray-800">E-mail</p>
                       <p className="text-gray-500 text-sm mt-0.5">Resposta em até 24h</p>
-                      <p className="text-primary font-medium mt-1">{siteConfig.email}</p>
+                      <a
+                        href={`mailto:${siteConfig.email}`}
+                        className="block text-primary font-medium mt-1 hover:underline"
+                      >
+                        {siteConfig.email}
+                      </a>
+                      {siteConfig.emailConcreto && (
+                        <a
+                          href={`mailto:${siteConfig.emailConcreto}`}
+                          className="block text-primary font-medium mt-1 hover:underline"
+                        >
+                          {siteConfig.emailConcreto}
+                        </a>
+                      )}
                     </div>
-                  </a>
+                  </div>
                 </li>
 
                 <li>

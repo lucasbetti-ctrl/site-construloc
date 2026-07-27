@@ -7,6 +7,7 @@ export interface SiteConfig {
   whatsappMaquinas: string;
   whatsappConcreto: string;
   email: string;
+  emailConcreto?: string;
   address: {
     street: string;
     city: string;

@@ -74,16 +74,34 @@ export default function Footer() {
                       {siteConfig.phoneSecondary}
                     </a>
                   )}
+                  {siteConfig.phoneConcreto && (
+                    <a
+                      href={`tel:${siteConfig.phoneConcreto.replace(/\D/g, "")}`}
+                      className="hover:text-secondary transition-colors"
+                    >
+                      {siteConfig.phoneConcreto} (Concreto)
+                    </a>
+                  )}
                 </div>
               </li>
               <li className="flex items-start gap-2.5 text-primary-200 text-sm">
                 <Mail size={16} className="mt-0.5 shrink-0 text-secondary" aria-hidden="true" />
-                <a
-                  href={`mailto:${siteConfig.email}`}
-                  className="hover:text-secondary transition-colors"
-                >
-                  {siteConfig.email}
-                </a>
+                <div className="flex flex-col">
+                  <a
+                    href={`mailto:${siteConfig.email}`}
+                    className="hover:text-secondary transition-colors"
+                  >
+                    {siteConfig.email}
+                  </a>
+                  {siteConfig.emailConcreto && (
+                    <a
+                      href={`mailto:${siteConfig.emailConcreto}`}
+                      className="hover:text-secondary transition-colors"
+                    >
+                      {siteConfig.emailConcreto}
+                    </a>
+                  )}
+                </div>
               </li>
               <li className="flex items-start gap-2.5 text-primary-200 text-sm">
                 <MapPin size={16} className="mt-0.5 shrink-0 text-secondary" aria-hidden="true" />

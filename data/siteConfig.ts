@@ -10,6 +10,7 @@ export const siteConfig: SiteConfig = {
   whatsappMaquinas: "551145388064",
   whatsappConcreto: "551145341771",
   email: "sac@construloc.com.br",
+  emailConcreto: "concreto@construloc.com.br",
   address: {
     street: "Av. Antonio Galvão de Camargo, 580 - Jd. Lucca",
     city: "Itatiba",
