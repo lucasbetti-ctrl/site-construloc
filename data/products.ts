@@ -595,6 +595,127 @@ export const products: Product[] = [
       "Lixadeira/politriz de piso manual Husqvarna, indicada para preparação, lixamento e polimento de pisos de concreto.",
     featured: false,
   },
+  {
+    id: "67",
+    name: "Serra Asfalto Clipper",
+    slug: "serra-asfalto-clipper",
+    category: "Equipamentos Leves",
+    categorySlug: "equipamentos-leves",
+    image: "/images/products/Serra asfalto clipper.png",
+    description:
+      "Cortadora de piso a combustão, com disco diamantado, indicada para corte de juntas em concreto e asfalto.",
+    featured: false,
+  },
+  {
+    id: "68",
+    name: "Roçadeira a Gasolina",
+    slug: "rocadeira-a-gasolina",
+    category: "Equipamentos Leves",
+    categorySlug: "equipamentos-leves",
+    image: "/images/products/Roçadeira a gasolina.png",
+    description:
+      "Roçadeira lateral a combustão, indicada para corte de mato, grama alta e limpeza de terrenos.",
+    featured: false,
+  },
+  {
+    id: "69",
+    name: "Betoneira 400 Litros",
+    slug: "betoneira-400-litros",
+    category: "Equipamentos Leves",
+    categorySlug: "equipamentos-leves",
+    image: "/images/products/Betoneria 400 litros.jpeg",
+    description:
+      "Betoneira com capacidade de 400 litros, indicada para preparo de concreto e argamassa em obras de médio e grande porte.",
+    featured: false,
+  },
+  {
+    id: "70",
+    name: "Andaimes",
+    slug: "andaimes",
+    category: "Equipamentos Leves",
+    categorySlug: "equipamentos-leves",
+    image: "/images/products/Andaimes.jpeg",
+    description:
+      "Torre de escoramento/andaime metálico modular, utilizada para sustentação de estruturas e acesso em altura em obras.",
+    featured: false,
+  },
+  {
+    id: "71",
+    name: "Sistema de Escoramento",
+    slug: "sistema-de-escoramento",
+    category: "Equipamentos Leves",
+    categorySlug: "equipamentos-leves",
+    image: "/images/products/Sistema de escoramento.jpeg",
+    description:
+      "Kit de escoras metálicas telescópicas com forma de madeira, utilizado para sustentação de lajes durante a concretagem.",
+    featured: false,
+  },
+  {
+    id: "72",
+    name: "Compressor de Ar",
+    slug: "compressor-de-ar",
+    category: "Equipamentos Leves",
+    categorySlug: "equipamentos-leves",
+    image: "/images/products/Compressor de ar.jpeg",
+    description:
+      "Compressor de ar de 100 litros, 2 HP, indicado para uso de ferramentas pneumáticas e pintura em obras e oficinas.",
+    featured: false,
+  },
+  {
+    id: "73",
+    name: "Compactador de Solo",
+    slug: "compactador-de-solo",
+    category: "Equipamentos Leves",
+    categorySlug: "equipamentos-leves",
+    image: "/images/products/Compactador de solo.jpeg",
+    description:
+      "Compactador de solo tipo soquete (sapo), indicado para compactação de valas e solos em espaços confinados.",
+    featured: false,
+  },
+  {
+    id: "74",
+    name: "Placa Vibratória",
+    slug: "placa-vibratoria",
+    category: "Equipamentos Leves",
+    categorySlug: "equipamentos-leves",
+    image: "/images/products/Placa vibratória.jpeg",
+    description:
+      "Placa vibratória compactadora, indicada para compactação de solos granulares e bases em obras de pavimentação.",
+    featured: false,
+  },
+  {
+    id: "75",
+    name: "Alisadora de Concreto",
+    slug: "alisadora-de-concreto",
+    category: "Equipamentos Leves",
+    categorySlug: "equipamentos-leves",
+    image: "/images/products/Alisadora de concreto.jpeg",
+    description:
+      "Acabadora de concreto tipo helicóptero, indicada para o alisamento e acabamento de pisos de concreto.",
+    featured: false,
+  },
+  {
+    id: "76",
+    name: "Motobomba Submersa",
+    slug: "motobomba-submersa",
+    category: "Equipamentos Leves",
+    categorySlug: "equipamentos-leves",
+    image: "/images/products/Motobomba submersa.jpeg",
+    description:
+      "Motobomba submersa a combustão, indicada para recalque e drenagem de água em obras, valas e fundações.",
+    featured: false,
+  },
+  {
+    id: "77",
+    name: "Lavadora Alta Pressão",
+    slug: "lavadora-alta-pressao",
+    category: "Equipamentos Leves",
+    categorySlug: "equipamentos-leves",
+    image: "/images/products/Lavadora alta pressão.jpeg",
+    description:
+      "Lavadora de alta pressão profissional, sobre rodízios, indicada para limpeza pesada de superfícies, equipamentos e veículos.",
+    featured: false,
+  },
 ];
 
 export const featuredProducts = products.filter((p) => p.featured);
