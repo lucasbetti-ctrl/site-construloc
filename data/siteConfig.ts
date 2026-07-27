@@ -26,7 +26,7 @@ export const siteConfig: SiteConfig = {
   hero: {
     title: "TUDO PARA SUA OBRA EM UM SÓ LUGAR",
     subtitle:
-      "Materiais de construção, ferramentas e equipamentos com qualidade garantida e o melhor preço da região.",
+      "Ferramentas e equipamentos com qualidade garantida e o melhor preço da região.",
   },
   about: {
     title: "35 anos construindo junto com você",

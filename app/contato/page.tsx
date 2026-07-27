@@ -83,20 +83,29 @@ export default function ContatoPage() {
                 </li>
 
                 <li>
-                  <div className="flex items-start gap-4 p-5 bg-white rounded-xl border border-gray-200">
-                    <span className="w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                      <MapPin size={20} className="text-primary" aria-hidden="true" />
-                    </span>
-                    <div>
-                      <p className="font-semibold text-gray-800">Endereço</p>
-                      <address className="not-italic text-gray-600 text-sm leading-relaxed mt-1">
-                        {siteConfig.address.street}
-                        <br />
-                        {siteConfig.address.city} — {siteConfig.address.state}
-                        <br />
-                        CEP {siteConfig.address.zip}
-                      </address>
+                  <div className="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <div className="flex items-start gap-4 p-5">
+                      <span className="w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                        <MapPin size={20} className="text-primary" aria-hidden="true" />
+                      </span>
+                      <div>
+                        <p className="font-semibold text-gray-800">Endereço</p>
+                        <address className="not-italic text-gray-600 text-sm leading-relaxed mt-1">
+                          {siteConfig.address.street}
+                          <br />
+                          {siteConfig.address.city} — {siteConfig.address.state}
+                          <br />
+                          CEP {siteConfig.address.zip}
+                        </address>
+                      </div>
                     </div>
+                    <iframe
+                      title="Localização da Construloc no Google Maps"
+                      src="https://www.google.com/maps?q=Construloc+Itatiba&ll=-23.0164174,-46.8406001&z=17&output=embed"
+                      className="w-full h-64 border-0"
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    />
                   </div>
                 </li>
               </ul>
@@ -119,7 +128,6 @@ export default function ContatoPage() {
                   ))}
                 </ul>
               </div>
-
             </div>
           </div>
         </div>
