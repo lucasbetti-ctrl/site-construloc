@@ -4,10 +4,12 @@ import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const slides = [2, 3, 4, 5, 7, 8].map((n) => ({
-  src: `/images/About_us/about-${n}.jpeg`,
-  alt: `Construloc - foto ${n}`,
-}));
+const slides = [
+  { src: "/images/about/sobre7.jpeg", alt: "Sede Construloc" },
+  { src: "/images/about/sobre6.jpeg", alt: "Frota Construloc" },
+  { src: "/images/about/sobre-8.PNG", alt: "Loja Construloc" },
+  { src: "/images/about/sobre5.jpeg", alt: "Equipamento Construloc em operação" },
+];
 
 export default function AboutCarousel() {
   const [current, setCurrent] = useState(0);

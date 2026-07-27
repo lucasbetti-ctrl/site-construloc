@@ -7,10 +7,10 @@ import { siteConfig } from "@/data/siteConfig";
 import { useWhatsAppModal } from "@/components/layout/WhatsAppModalProvider";
 import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
 
-const slides = [
-  { src: "/images/hero/Capa.avif", alt: "Obra de construção civil" },
-  { src: "/images/hero/Capa2.avif", alt: "Equipamentos para construção" },
-];
+const slides = [2, 3, 4, 5, 7, 8].map((n) => ({
+  src: `/images/hero/about-${n}.jpeg`,
+  alt: `Construloc - foto ${n}`,
+}));
 
 export default function HeroSection() {
   const [current, setCurrent] = useState(0);
@@ -37,13 +37,13 @@ export default function HeroSection() {
             fill
             priority={i === 0}
             sizes="100vw"
-            className="object-cover scale-100 transition-transform duration-[8000ms] ease-out"
+            className="object-cover object-top md:object-center scale-100 transition-transform duration-[8000ms] ease-out"
           style={{ transform: i === current ? "scale(1.08)" : "scale(1)" }}
           />
         </div>
       ))}
 
-      <div className="absolute inset-0 bg-primary/40" />
+      <div className="absolute inset-0 bg-primary/20" />
 
       <div className="relative z-10 container mx-auto px-4 py-20">
         <div className="max-w-2xl">
