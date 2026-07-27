@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import { Phone, Mail, MapPin } from "lucide-react";
-import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
 
 import { siteConfig } from "@/data/siteConfig";
-import { generateWhatsAppLink } from "@/lib/whatsapp";
 import SectionTitle from "@/components/ui/SectionTitle";
+import ContatoWhatsAppCard from "@/components/sections/ContatoWhatsAppCard";
 
 export const metadata: Metadata = {
   title: "Contato",
@@ -35,21 +34,7 @@ export default function ContatoPage() {
             <div>
               <ul className="space-y-5">
                 <li>
-                  <a
-                    href={generateWhatsAppLink("maquinas")}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-start gap-4 p-5 bg-white rounded-xl border border-gray-200 hover:border-accent hover:shadow-sm transition-all group"
-                  >
-                    <span className="w-11 h-11 rounded-full bg-accent/10 flex items-center justify-center shrink-0 group-hover:bg-accent group-hover:text-white transition-colors">
-                      <WhatsAppIcon size={20} className="text-accent group-hover:text-white" />
-                    </span>
-                    <div>
-                      <p className="font-semibold text-gray-800">WhatsApp</p>
-                      <p className="text-gray-500 text-sm mt-0.5">Atendimento rápido</p>
-                      <p className="text-primary font-medium mt-1">{siteConfig.phoneSecondary}</p>
-                    </div>
-                  </a>
+                  <ContatoWhatsAppCard />
                 </li>
 
                 <li>
@@ -114,7 +99,8 @@ export default function ContatoPage() {
                 <ul className="space-y-3 text-sm">
                   {[
                     { days: "Segunda a Sexta", hours: "07h00 às 17h00" },
-                    { days: "Sábado, Domingo e Feriados", hours: "Fechado" },
+                    { days: "Sábado (Concreto)", hours: "07h00 às 11h00" },
+                    { days: "Sábado (Máquinas), Domingo e Feriados", hours: "Fechado" },
                   ].map((item) => (
                     <li key={item.days} className="flex justify-between">
                       <span className="text-gray-600">{item.days}</span>
