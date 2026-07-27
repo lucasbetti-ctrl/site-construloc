@@ -66,7 +66,7 @@ export default function SobrePage() {
             </FadeIn>
             <FadeIn direction="right" delay={0.15} className="relative aspect-video rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="/images/faxada.jpg"
+                src="/images/faxada_1.jpeg"
                 alt="Fachada da Construloc"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -103,7 +103,7 @@ export default function SobrePage() {
       {/* Números */}
       <section className="py-16 bg-primary">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
             <div>
               <p className="text-4xl font-black text-secondary">
                 <AnimatedCounter target={30} suffix="+" />
@@ -121,12 +121,6 @@ export default function SobrePage() {
                 <AnimatedCounter target={150} suffix="+" />
               </p>
               <p className="text-primary-200 text-sm mt-1">Produtos no catálogo</p>
-            </div>
-            <div>
-              <p className="text-4xl font-black text-secondary">
-                <AnimatedCounter target={8} />
-              </p>
-              <p className="text-primary-200 text-sm mt-1">Marcas parceiras</p>
             </div>
           </div>
         </div>

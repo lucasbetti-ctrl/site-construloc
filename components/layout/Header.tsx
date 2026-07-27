@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { Mail, Phone, Search, ChevronDown, Menu, X } from "lucide-react";
+import { Search, ChevronDown, Menu, X } from "lucide-react";
 import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
 
 import { siteConfig } from "@/data/siteConfig";
@@ -51,54 +51,11 @@ export default function Header() {
         scrolled && "shadow-lg"
       )}
     >
-      {/* Topbar */}
-      <div className="bg-gray-100 border-b border-gray-200">
-        <div className="container mx-auto px-4 py-2 flex flex-col sm:flex-row items-center justify-between gap-2">
-          <div className="flex items-center gap-6 text-sm text-gray-600">
-            <a
-              href={`mailto:${siteConfig.email}`}
-              className="flex items-center gap-1.5 hover:text-primary transition-colors"
-            >
-              <Mail size={14} aria-hidden="true" />
-              <span>{siteConfig.email}</span>
-            </a>
-            <a
-              href={`tel:${siteConfig.phone.replace(/\D/g, "")}`}
-              className="flex items-center gap-1.5 hover:text-primary transition-colors"
-            >
-              <Phone size={14} aria-hidden="true" />
-              <span>
-                {siteConfig.phone}
-                {siteConfig.phoneSecondary && ` / ${siteConfig.phoneSecondary}`}
-              </span>
-            </a>
-          </div>
-
-          <form onSubmit={handleSearch} className="flex items-center gap-1">
-            <input
-              type="search"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Buscar produtos..."
-              className="text-sm border border-gray-300 rounded-l px-3 py-1.5 outline-none focus:border-primary w-48 sm:w-64"
-              aria-label="Buscar produtos"
-            />
-            <button
-              type="submit"
-              className="bg-primary text-white px-3 py-1.5 rounded-r hover:bg-primary-600 transition-colors"
-              aria-label="Pesquisar"
-            >
-              <Search size={16} aria-hidden="true" />
-            </button>
-          </form>
-        </div>
-      </div>
-
       {/* Navbar principal */}
       <nav className="bg-primary" aria-label="Navegação principal">
-        <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+        <div className="relative w-full px-4 py-3 flex items-center justify-between gap-4">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex items-center gap-3 shrink-0">
             <Image
               src="/images/logo.png"
               alt={`Logo ${siteConfig.name}`}
@@ -106,10 +63,16 @@ export default function Header() {
               height={60}
               className="h-16 w-auto object-contain brightness-0 invert"
             />
+            <span className="hidden lg:block text-white text-base font-medium whitespace-nowrap border-l border-white/30 pl-3">
+              Locação de equipamentos para construção civil
+            </span>
           </Link>
 
           {/* Links desktop */}
-          <ul className="hidden lg:flex items-center gap-2" role="list">
+          <ul
+            className="hidden lg:flex items-center gap-2 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+            role="list"
+          >
             <li>
               <Link
                 href="/"
@@ -185,18 +148,25 @@ export default function Header() {
             </li>
           </ul>
 
-          {/* CTA WhatsApp + menu mobile */}
-          <div className="flex items-center gap-3">
-            <a
-              href={generateWhatsAppLink()}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden sm:flex items-center gap-2 bg-accent text-white font-semibold px-4 py-2 rounded text-sm hover:bg-accent-600 transition-colors"
-              aria-label="Fale conosco pelo WhatsApp"
-            >
-              <WhatsAppIcon size={16} />
-              <span>Fale no WhatsApp</span>
-            </a>
+          {/* Busca + menu mobile */}
+          <div className="flex items-center gap-3 justify-self-end">
+            <form onSubmit={handleSearch} className="hidden sm:flex items-center gap-1">
+              <input
+                type="search"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Buscar produtos..."
+                className="text-sm border border-gray-300 rounded-l px-3 py-1.5 outline-none focus:border-primary w-40 lg:w-56"
+                aria-label="Buscar produtos"
+              />
+              <button
+                type="submit"
+                className="bg-secondary text-primary px-3 py-1.5 rounded-r hover:bg-secondary-600 transition-colors"
+                aria-label="Pesquisar"
+              >
+                <Search size={16} aria-hidden="true" />
+              </button>
+            </form>
 
             <button
               className="lg:hidden text-white p-1"

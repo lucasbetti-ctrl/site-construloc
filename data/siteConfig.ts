@@ -30,5 +30,5 @@ export const siteConfig: SiteConfig = {
     description:
       "A Construloc nasceu da paixão por ajudar pessoas a realizarem seus sonhos de construção e reforma. Com mais de três décadas no mercado, somos referência em qualidade de produtos e atendimento personalizado. Nossa equipe especializada está sempre pronta para orientar você na escolha dos melhores materiais para cada etapa da sua obra.",
   },
-  copyright: `© ${new Date().getFullYear()} Construloc. Todos os direitos reservados.`,
+  copyright: `© ${new Date().getFullYear()} Construloc - CNPJ 65.861.437/0001-65. Todos os direitos reservados.`,
 };

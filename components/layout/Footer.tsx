@@ -21,7 +21,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-primary-200 text-sm leading-relaxed">
-              {siteConfig.description}
+              A primeira locadora de equipamentos de Itatiba desde 1991.
             </p>
           </div>
 

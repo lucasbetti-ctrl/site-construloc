@@ -113,7 +113,7 @@ export default function ContatoPage() {
                 <h2 className="text-xl font-bold text-primary mb-5">Horário de Funcionamento</h2>
                 <ul className="space-y-3 text-sm">
                   {[
-                    { days: "Segunda a Sexta", hours: "07h00 às 18h00" },
+                    { days: "Segunda a Sexta", hours: "07h00 às 17h00" },
                     { days: "Sábado, Domingo e Feriados", hours: "Fechado" },
                   ].map((item) => (
                     <li key={item.days} className="flex justify-between">
