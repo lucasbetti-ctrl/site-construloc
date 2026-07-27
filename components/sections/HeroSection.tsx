@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 import { siteConfig } from "@/data/siteConfig";
-import { generateWhatsAppLink } from "@/lib/whatsapp";
+import { useWhatsAppModal } from "@/components/layout/WhatsAppModalProvider";
 import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
 
 const slides = [
@@ -14,6 +14,7 @@ const slides = [
 
 export default function HeroSection() {
   const [current, setCurrent] = useState(0);
+  const { openWhatsAppModal } = useWhatsAppModal();
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -53,15 +54,14 @@ export default function HeroSection() {
             {siteConfig.hero.subtitle}
           </p>
           <div className="mt-10">
-            <a
-              href={generateWhatsAppLink("Olá! Gostaria de fazer um orçamento.")}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
+              onClick={openWhatsAppModal}
               className="inline-flex items-center gap-3 bg-accent text-white font-bold px-8 py-4 rounded-lg text-lg hover:bg-accent-600 transition-colors shadow-lg"
             >
               <WhatsAppIcon size={22} />
               Faça um Orçamento
-            </a>
+            </button>
           </div>
         </div>
 

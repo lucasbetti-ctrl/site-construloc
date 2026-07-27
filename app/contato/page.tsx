@@ -36,7 +36,7 @@ export default function ContatoPage() {
               <ul className="space-y-5">
                 <li>
                   <a
-                    href={generateWhatsAppLink()}
+                    href={generateWhatsAppLink("maquinas")}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-start gap-4 p-5 bg-white rounded-xl border border-gray-200 hover:border-accent hover:shadow-sm transition-all group"

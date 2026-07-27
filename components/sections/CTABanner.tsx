@@ -1,9 +1,13 @@
+"use client";
+
 import Image from "next/image";
 import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
 
-import { generateWhatsAppLink } from "@/lib/whatsapp";
+import { useWhatsAppModal } from "@/components/layout/WhatsAppModalProvider";
 
 export default function CTABanner() {
+  const { openWhatsAppModal } = useWhatsAppModal();
+
   return (
     <section className="relative py-24 overflow-hidden">
       <Image
@@ -24,15 +28,14 @@ export default function CTABanner() {
           Atendemos toda a região com entrega rápida.
         </p>
         <div className="mt-8">
-          <a
-            href={generateWhatsAppLink("Olá! Gostaria de solicitar um orçamento para minha obra.")}
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            type="button"
+            onClick={openWhatsAppModal}
             className="inline-flex items-center gap-3 bg-accent text-white font-bold px-8 py-4 rounded-lg text-lg hover:bg-accent-600 transition-colors shadow-lg"
           >
             <WhatsAppIcon size={22} />
             Solicitar Orçamento
-          </a>
+          </button>
         </div>
       </div>
     </section>

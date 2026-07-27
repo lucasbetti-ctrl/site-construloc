@@ -3,7 +3,8 @@ export interface SiteConfig {
   description: string;
   phone: string;
   phoneSecondary?: string;
-  whatsapp: string;
+  whatsappMaquinas: string;
+  whatsappConcreto: string;
   email: string;
   address: {
     street: string;

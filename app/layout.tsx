@@ -4,6 +4,7 @@ import { Barlow, Barlow_Condensed } from "next/font/google";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import WhatsAppButton from "@/components/layout/WhatsAppButton";
+import WhatsAppModalProvider from "@/components/layout/WhatsAppModalProvider";
 import { siteConfig } from "@/data/siteConfig";
 import "./globals.css";
 
@@ -51,10 +52,12 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`${barlow.variable} ${barlowCondensed.variable} font-sans`}>
-        <Header />
-        <main id="main-content">{children}</main>
-        <Footer />
-        <WhatsAppButton />
+        <WhatsAppModalProvider>
+          <Header />
+          <main id="main-content">{children}</main>
+          <Footer />
+          <WhatsAppButton />
+        </WhatsAppModalProvider>
       </body>
     </html>
   );

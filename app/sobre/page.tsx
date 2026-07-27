@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
 
 import { siteConfig } from "@/data/siteConfig";
-import { generateWhatsAppLink } from "@/lib/whatsapp";
 import SectionTitle from "@/components/ui/SectionTitle";
 import AnimatedCounter from "@/components/ui/AnimatedCounter";
 import AboutHero from "@/components/sections/AboutHero";
+import SobreWhatsAppButton from "@/components/sections/SobreWhatsAppButton";
 import FadeIn from "@/components/ui/FadeIn";
 
 export const metadata: Metadata = {
@@ -54,15 +53,7 @@ export default function SobrePage() {
               <p className="text-gray-600 leading-relaxed">
                 Começamos como uma pequena loja de bairro com o sonho de oferecer qualidade acessível. Ao longo dos anos, crescemos e nos tornamos referência regional, mantendo sempre o compromisso com o cliente e a excelência nos produtos que oferecemos.
               </p>
-              <a
-                href={generateWhatsAppLink("Olá! Gostaria de saber mais sobre a Construloc.")}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 mt-8 bg-accent text-white font-bold px-6 py-3 rounded-lg hover:bg-accent-600 transition-colors"
-              >
-                <WhatsAppIcon size={18} />
-                Fale Conosco
-              </a>
+              <SobreWhatsAppButton />
             </FadeIn>
             <FadeIn direction="right" delay={0.15} className="relative aspect-video rounded-xl overflow-hidden shadow-lg">
               <Image

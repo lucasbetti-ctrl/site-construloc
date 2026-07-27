@@ -9,7 +9,7 @@ import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
 
 import { siteConfig } from "@/data/siteConfig";
 import { categories } from "@/data/categories";
-import { generateWhatsAppLink } from "@/lib/whatsapp";
+import { useWhatsAppModal } from "@/components/layout/WhatsAppModalProvider";
 import { cn } from "@/lib/utils";
 
 export default function Header() {
@@ -19,6 +19,7 @@ export default function Header() {
   const [searchQuery, setSearchQuery] = useState("");
   const dropdownRef = useRef<HTMLLIElement>(null);
   const router = useRouter();
+  const { openWhatsAppModal } = useWhatsAppModal();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 10);
@@ -211,15 +212,17 @@ export default function Header() {
                 </li>
               ))}
               <li className="pt-2">
-                <a
-                  href={generateWhatsAppLink()}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  type="button"
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    openWhatsAppModal();
+                  }}
                   className="flex items-center gap-2 bg-accent text-white font-semibold px-4 py-2 rounded text-sm w-full justify-center"
                 >
                   <WhatsAppIcon size={16} />
                   Fale no WhatsApp
-                </a>
+                </button>
               </li>
             </ul>
           </div>

@@ -6,7 +6,8 @@ export const siteConfig: SiteConfig = {
     "Sua loja completa de materiais de construção, ferramentas e equipamentos. Qualidade e tradição a serviço da sua obra.",
   phone: "(11) 4538-8065",
   phoneSecondary: "(11) 4538-8064",
-  whatsapp: "551145388064",
+  whatsappMaquinas: "551145388064",
+  whatsappConcreto: "551145341771",
   email: "sac@construloc.com.br",
   address: {
     street: "Av. Antonio Galvão de Camargo, 580 - Jd. Lucca",

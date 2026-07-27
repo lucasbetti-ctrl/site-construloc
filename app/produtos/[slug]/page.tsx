@@ -41,6 +41,7 @@ export default function ProductPage({ params }: ProductPageProps) {
   }
 
   const whatsappMessage = `Olá! Tenho interesse no produto: ${product.name}. Poderia me passar mais informações?`;
+  const whatsappTarget = product.categorySlug === "concreto" ? "concreto" : "maquinas";
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -96,7 +97,7 @@ export default function ProductPage({ params }: ProductPageProps) {
 
               <div className="pt-3 flex flex-wrap items-center gap-4">
                 <a
-                  href={generateWhatsAppLink(whatsappMessage)}
+                  href={generateWhatsAppLink(whatsappTarget, whatsappMessage)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-accent text-white font-semibold text-sm px-5 py-2.5 rounded-lg hover:bg-accent-600 transition-colors"
