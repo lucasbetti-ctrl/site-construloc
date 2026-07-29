@@ -7,7 +7,7 @@ import { siteConfig } from "@/data/siteConfig";
 import { useWhatsAppModal } from "@/components/layout/WhatsAppModalProvider";
 import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
 
-const slides = [2, 3, 4, 5, 7, 8].map((n) => ({
+const slides = [8, 3, 7, 2, 4, 5].map((n) => ({
   src: `/images/hero/about-${n}.jpeg`,
   alt: `Construloc - foto ${n}`,
 }));
@@ -38,7 +38,7 @@ export default function HeroSection() {
             priority={i === 0}
             sizes="100vw"
             className="object-cover object-top md:object-center scale-100 transition-transform duration-[8000ms] ease-out"
-          style={{ transform: i === current ? "scale(1.08)" : "scale(1)" }}
+            style={{ transform: i === current ? "scale(1.08)" : "scale(1)" }}
           />
         </div>
       ))}
