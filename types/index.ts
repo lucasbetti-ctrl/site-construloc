@@ -46,6 +46,7 @@ export interface Product {
   category: string;
   categorySlug: string;
   image: string;
+  images?: string[];
   description: string;
   featured: boolean;
 }

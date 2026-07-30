@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
+import ProductImageCarousel from "./ProductImageCarousel";
 
 import { products } from "@/data/products";
 import { generateWhatsAppLink } from "@/lib/whatsapp";
@@ -74,15 +75,19 @@ export default function ProductPage({ params }: ProductPageProps) {
         <article className="bg-white rounded-xl shadow-sm overflow-hidden max-w-2xl">
           <div className="flex flex-col md:flex-row md:items-start">
             {/* Imagem */}
-            <div className="relative w-full md:w-[320px] shrink-0 aspect-square bg-white p-6">
-              <Image
-                src={product.image}
-                alt={product.name}
-                fill
-                sizes="(max-width: 768px) 100vw, 320px"
-                className="object-contain"
-              />
-            </div>
+            {product.images && product.images.length > 1 ? (
+              <ProductImageCarousel images={product.images} alt={product.name} />
+            ) : (
+              <div className="relative w-full md:w-[320px] shrink-0 aspect-square bg-white p-6">
+                <Image
+                  src={product.image}
+                  alt={product.name}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 320px"
+                  className="object-contain"
+                />
+              </div>
+            )}
 
 
             {/* Detalhes */}

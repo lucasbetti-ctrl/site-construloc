@@ -12,6 +12,11 @@ const slides = [8, 3, 7, 2, 4, 5].map((n) => ({
   alt: `Construloc - foto ${n}`,
 }));
 
+slides.push({
+  src: "/images/hero/concreto-2.png",
+  alt: "Construloc - concreto",
+});
+
 export default function HeroSection() {
   const [current, setCurrent] = useState(0);
   const { openWhatsAppModal } = useWhatsAppModal();

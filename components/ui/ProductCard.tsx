@@ -24,7 +24,9 @@ export default function ProductCard({ product }: ProductCardProps) {
           {product.category}
         </span>
         <h3 className="font-semibold text-gray-800 text-base leading-tight mb-3 flex-1">
-          {product.name}
+          {product.slug === "concreto"
+            ? "Clique em saiba mais e solicite seu orçamento."
+            : product.name}
         </h3>
         <Link
           href={`/produtos/${product.slug}`}

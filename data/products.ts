@@ -716,6 +716,22 @@ export const products: Product[] = [
       "Lavadora de alta pressão profissional, sobre rodízios, indicada para limpeza pesada de superfícies, equipamentos e veículos.",
     featured: false,
   },
+  {
+    id: "78",
+    name: "Concreto",
+    slug: "concreto",
+    category: "Concreto",
+    categorySlug: "concreto",
+    image: "/images/products/concreto-2.png",
+    images: [
+      "/images/products/concreto-2.png",
+      "/images/products/concreto-1.png",
+      "/images/products/concetro-3.png",
+    ],
+    description:
+      "Concreto usinado com entrega feita por caminhão betoneira, ideal para fundações, lajes, pilares e demais estruturas de obra. Fale conosco para consultar volume, traço e prazo de entrega.",
+    featured: false,
+  },
 ];
 
 export const featuredProducts = products.filter((p) => p.featured);
