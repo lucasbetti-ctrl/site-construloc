@@ -7,7 +7,7 @@ export const products: Product[] = [
     slug: "plataforma-tesoura-jlg-es1932",
     category: "Plataformas Elevatórias",
     categorySlug: "plataformas-elevatorias",
-    image: "/images/products/jlg-es1932.jpg",
+    image: "/images/products/ES1932.jpeg",
     description:
       "Plataforma elevatória tipo tesoura, elétrica, indicada para trabalhos internos em altura com boa capacidade de carga e compactação para passar por portas padrão.",
     featured: false,
