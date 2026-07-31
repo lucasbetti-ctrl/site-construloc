@@ -49,6 +49,7 @@ export interface Product {
   images?: string[];
   description: string;
   featured: boolean;
+  specs?: { label: string; value: string }[];
 }
 
 export interface Brand {

@@ -11,6 +11,13 @@ export const products: Product[] = [
     description:
       "Plataforma elevatória tipo tesoura, elétrica, indicada para trabalhos internos em altura com boa capacidade de carga e compactação para passar por portas padrão.",
     featured: false,
+    specs: [
+      { label: "Altura de Trabalho", value: "7,72m" },
+      { label: "Altura de piso", value: "5,72m" },
+      { label: "Largura", value: "0,76m" },
+      { label: "Comprimento", value: "1,87m" },
+      { label: "Peso do equipamento", value: "1.229kg" },
+    ],
   },
   {
     id: "14",
@@ -22,6 +29,13 @@ export const products: Product[] = [
     description:
       "Plataforma elevatória tesoura de maior porte, elétrica, ideal para manutenções industriais e obras com necessidade de altura de trabalho elevada.",
     featured: false,
+    specs: [
+      { label: "Altura de Trabalho", value: "11,60m" },
+      { label: "Altura de piso", value: "9,80m" },
+      { label: "Largura", value: "1,17m" },
+      { label: "Comprimento", value: "2,40m" },
+      { label: "Peso do equipamento", value: "2.549kg" },
+    ],
   },
   {
     id: "15",
@@ -33,6 +47,14 @@ export const products: Product[] = [
     description:
       "Plataforma elevatória articulada elétrica, com lança flexível para contornar obstáculos e alcançar pontos de difícil acesso em altura.",
     featured: true,
+    specs: [
+      { label: "Altura de Trabalho", value: "20,39m" },
+      { label: "Altura de piso", value: "13,36m" },
+      { label: "Alcance Horizontal Max", value: "13,19m" },
+      { label: "Largura", value: "2,42m" },
+      { label: "Comprimento", value: "10,16m" },
+      { label: "Peso do equipamento", value: "7.705kg" },
+    ],
   },
   {
     id: "16",
@@ -44,6 +66,14 @@ export const products: Product[] = [
     description:
       "Plataforma elevatória vertical compacta, ideal para ambientes internos e espaços reduzidos, com fácil manobrabilidade.",
     featured: false,
+    specs: [
+      { label: "Altura de Trabalho", value: "9,90m" },
+      { label: "Altura de piso", value: "7,90m" },
+      { label: "Alcance Horizontal Max", value: "3,15m" },
+      { label: "Largura", value: "1,00m" },
+      { label: "Comprimento", value: "2,82m" },
+      { label: "Peso do equipamento", value: "2.650kg" },
+    ],
   },
   {
     id: "17",
@@ -55,6 +85,14 @@ export const products: Product[] = [
     description:
       "Plataforma articulada compacta, elétrica, com ótima mobilidade para trabalhos internos e externos em altura.",
     featured: false,
+    specs: [
+      { label: "Altura de Trabalho", value: "15,00m" },
+      { label: "Altura de piso", value: "13,00m" },
+      { label: "Alcance Horizontal Max", value: "7,13m" },
+      { label: "Largura", value: "1,50m" },
+      { label: "Comprimento", value: "4,40m" },
+      { label: "Peso do equipamento", value: "6.700kg" },
+    ],
   },
   {
     id: "18",
@@ -64,8 +102,16 @@ export const products: Product[] = [
     categorySlug: "plataformas-elevatorias",
     image: "/images/products/manitou-160-atj.jpg",
     description:
-      "Plataforma elevatória articulada 4x4, robusta, indicada para terrenos irregulares e trabalhos externos em altura.",
+      "Plataforma elevatória a diesel articulada 4x4, robusta, indicada para terrenos irregulares e trabalhos externos em altura.",
     featured: false,
+    specs: [
+      { label: "Altura de Trabalho", value: "16,00m" },
+      { label: "Altura de piso", value: "14,00m" },
+      { label: "Alcance Horizontal Max", value: "8,30m" },
+      { label: "Largura", value: "2,32m" },
+      { label: "Comprimento", value: "6,68m" },
+      { label: "Peso do equipamento", value: "6.160kg" },
+    ],
   },
   {
     id: "19",
@@ -77,10 +123,18 @@ export const products: Product[] = [
     description:
       "Plataforma articulada elétrica com lança estendida, oferecendo maior alcance horizontal para acesso a áreas de difícil chegada.",
     featured: false,
+    specs: [
+      { label: "Altura de Trabalho", value: "16,90m" },
+      { label: "Altura de piso", value: "14,90m" },
+      { label: "Alcance Horizontal Max", value: "9,43m" },
+      { label: "Largura", value: "1,75m" },
+      { label: "Comprimento", value: "6,84m" },
+      { label: "Peso do equipamento", value: "6.910kg" },
+    ],
   },
   {
     id: "20",
-    name: "Plataforma Articulada Manitou 200 ATJ e",
+    name: "Plataforma Articulada Manitou 200 ATJ X",
     slug: "plataforma-articulada-manitou-200-atj-e",
     category: "Plataformas Elevatórias",
     categorySlug: "plataformas-elevatorias",
@@ -88,6 +142,14 @@ export const products: Product[] = [
     description:
       "Plataforma articulada de grande porte, elétrica, com alto alcance vertical e horizontal para obras e manutenções de grande escala.",
     featured: true,
+    specs: [
+      { label: "Altura de Trabalho", value: "20,35m" },
+      { label: "Altura de piso", value: "18,35m" },
+      { label: "Alcance Horizontal Max", value: "12,00m" },
+      { label: "Largura", value: "2,40m" },
+      { label: "Comprimento", value: "8,42m" },
+      { label: "Peso do equipamento", value: "10.050kg" },
+    ],
   },
   {
     id: "21",
@@ -99,6 +161,13 @@ export const products: Product[] = [
     description:
       "Plataforma tesoura ultracompacta, ideal para ambientes internos com pouco espaço, elevadores e corredores estreitos.",
     featured: false,
+    specs: [
+      { label: "Altura de Trabalho", value: "7,30m" },
+      { label: "Altura de piso", value: "5,50m" },
+      { label: "Largura", value: "0,81m" },
+      { label: "Comprimento", value: "1,50m" },
+      { label: "Peso do equipamento", value: "1.214kg" },
+    ],
   },
   {
     id: "22",
@@ -110,6 +179,13 @@ export const products: Product[] = [
     description:
       "Plataforma tesoura elétrica de porte médio, com equilíbrio entre altura de trabalho e compactação, para uso interno e externo.",
     featured: false,
+    specs: [
+      { label: "Altura de Trabalho", value: "11,48m" },
+      { label: "Altura de piso", value: "9,65m" },
+      { label: "Largura", value: "1,20m" },
+      { label: "Comprimento", value: "2,32m" },
+      { label: "Peso do equipamento", value: "2.485kg" },
+    ],
   },
   {
     id: "23",
@@ -121,6 +197,14 @@ export const products: Product[] = [
     description:
       "Plataforma articulada com sistema SmarTorque, grande alcance vertical e horizontal, ideal para trabalhos em altura de difícil acesso.",
     featured: true,
+    specs: [
+      { label: "Altura de Trabalho", value: "20,11m" },
+      { label: "Altura de piso", value: "18,29m" },
+      { label: "Alcance Horizontal Max", value: "11,56m" },
+      { label: "Largura", value: "2,44m" },
+      { label: "Comprimento", value: "8,59m" },
+      { label: "Peso do equipamento", value: "8.557kg" },
+    ],
   },
   {
     id: "24",
@@ -132,6 +216,13 @@ export const products: Product[] = [
     description:
       "Plataforma tesoura todo-terreno 4x4, robusta, indicada para uso externo em terrenos irregulares e obras de grande porte.",
     featured: false,
+    specs: [
+      { label: "Altura de Trabalho", value: "11,58m" },
+      { label: "Altura de piso", value: "9,75m" },
+      { label: "Largura", value: "1,76m" },
+      { label: "Comprimento", value: "2,72m" },
+      { label: "Peso do equipamento", value: "3.443kg" },
+    ],
   },
   {
     id: "25",
@@ -154,6 +245,14 @@ export const products: Product[] = [
     description:
       "Plataforma articulada elétrica de pequeno porte, compacta e de fácil manobra, ideal para manutenção e montagens em espaços internos e áreas restritas.",
     featured: false,
+    specs: [
+      { label: "Altura de Trabalho", value: "11,91m" },
+      { label: "Altura de piso", value: "9,91m" },
+      { label: "Alcance Horizontal Max", value: "6,19m" },
+      { label: "Largura", value: "1,80m" },
+      { label: "Comprimento", value: "5,50m" },
+      { label: "Peso do equipamento", value: "4.150kg" },
+    ],
   },
   {
     id: "27",
@@ -165,6 +264,13 @@ export const products: Product[] = [
     description:
       "Plataforma elevatória tipo tesoura, elétrica e compacta, indicada para trabalhos internos em altura com boa capacidade de carga.",
     featured: false,
+    specs: [
+      { label: "Altura de Trabalho", value: "7,64m" },
+      { label: "Altura de piso", value: "5,64m" },
+      { label: "Largura", value: "0,81m" },
+      { label: "Comprimento", value: "1,88m" },
+      { label: "Peso do equipamento", value: "1.279kg" },
+    ],
   },
   {
     id: "28",
@@ -176,6 +282,13 @@ export const products: Product[] = [
     description:
       "Plataforma elevatória tipo tesoura, elétrica, com raio de giro interno zero, ideal para ambientes internos e externos e corredores estreitos.",
     featured: false,
+    specs: [
+      { label: "Altura de Trabalho", value: "11,60m" },
+      { label: "Altura de piso", value: "9,60m" },
+      { label: "Largura", value: "1,17m" },
+      { label: "Comprimento", value: "2,36m" },
+      { label: "Peso do equipamento", value: "2.208kg" },
+    ],
   },
   {
     id: "29",
@@ -187,6 +300,13 @@ export const products: Product[] = [
     description:
       "Plataforma elevatória tipo tesoura, elétrica, de grande altura de trabalho, indicada para manutenção industrial e obras em ambientes internos.",
     featured: false,
+    specs: [
+      { label: "Altura de Trabalho", value: "13,90m" },
+      { label: "Altura de piso", value: "11,90m" },
+      { label: "Largura", value: "1,17m" },
+      { label: "Comprimento", value: "2,36m" },
+      { label: "Peso do equipamento", value: "2.843kg" },
+    ],
   },
   {
     id: "30",
@@ -198,6 +318,14 @@ export const products: Product[] = [
     description:
       "Plataforma articulada a diesel, com tração 4x4, indicada para trabalhos em altura em terrenos irregulares e áreas externas de difícil acesso.",
     featured: false,
+    specs: [
+      { label: "Altura de Trabalho", value: "15,86m" },
+      { label: "Altura de piso", value: "13,86m" },
+      { label: "Alcance Horizontal Max", value: "7,52m" },
+      { label: "Largura", value: "2,30m" },
+      { label: "Comprimento", value: "5,40m" },
+      { label: "Peso do equipamento", value: "6.080kg" },
+    ],
   },
   {
     id: "31",
@@ -209,6 +337,14 @@ export const products: Product[] = [
     description:
       "Plataforma articulada elétrica, com lança e jib articulado, ideal para trabalhos em altura internos e externos com operação silenciosa.",
     featured: false,
+    specs: [
+      { label: "Altura de Trabalho", value: "15,94m" },
+      { label: "Altura de piso", value: "13,94m" },
+      { label: "Alcance Horizontal Max", value: "7,65m" },
+      { label: "Largura", value: "1,80m" },
+      { label: "Comprimento", value: "6,83m" },
+      { label: "Peso do equipamento", value: "7.394kg" },
+    ],
   },
   {
     id: "32",
@@ -220,10 +356,18 @@ export const products: Product[] = [
     description:
       "Plataforma articulada elétrica, ecológica e silenciosa, com jib articulado e rotação da plataforma para maior precisão de posicionamento.",
     featured: false,
+    specs: [
+      { label: "Altura de Trabalho", value: "15,87m" },
+      { label: "Altura de piso", value: "13,87m" },
+      { label: "Alcance Horizontal Max", value: "7,62m" },
+      { label: "Largura", value: "1,80m" },
+      { label: "Comprimento", value: "5,56m" },
+      { label: "Peso do equipamento", value: "6.693kg" },
+    ],
   },
   {
     id: "33",
-    name: "Plataforma Articulada Genie Z-34/22 N",
+    name: "Plataforma Articulada Genie Z-34/22 DC",
     slug: "plataforma-articulada-genie-z-34-22-n",
     category: "Plataformas Elevatórias",
     categorySlug: "plataformas-elevatorias",
@@ -231,6 +375,14 @@ export const products: Product[] = [
     description:
       "Plataforma articulada elétrica compacta, indicada para trabalhos internos e externos em altura com boa mobilidade em espaços reduzidos.",
     featured: false,
+    specs: [
+      { label: "Altura de Trabalho", value: "12,52m" },
+      { label: "Altura de piso", value: "10,52m" },
+      { label: "Alcance Horizontal Max", value: "4,57m" },
+      { label: "Largura", value: "1,73m" },
+      { label: "Comprimento", value: "5,56m" },
+      { label: "Peso do equipamento", value: "4.990kg" },
+    ],
   },
   {
     id: "34",
@@ -242,6 +394,14 @@ export const products: Product[] = [
     description:
       "Plataforma articulada a diesel de grande alcance, com lança dupla articulada, ideal para trabalhos em altura elevada em obras e áreas externas.",
     featured: false,
+    specs: [
+      { label: "Altura de Trabalho", value: "25,77m" },
+      { label: "Altura de piso", value: "23,77m" },
+      { label: "Alcance Horizontal Max", value: "18,29m" },
+      { label: "Largura", value: "2,49m" },
+      { label: "Comprimento", value: "11,27m" },
+      { label: "Peso do equipamento", value: "17.010kg" },
+    ],
   },
   {
     id: "35",
@@ -473,6 +633,12 @@ export const products: Product[] = [
     description:
       "Rolo compactador pé de carneiro Caterpillar, cabinado (cabine fechada com ar-condicionado), indicado para compactação de solos em obras de terraplenagem e infraestrutura.",
     featured: false,
+    specs: [
+      { label: "Peso operacional", value: "11.100 kg" },
+      { label: "Comprimento", value: "5,85 m" },
+      { label: "Largura do tambor", value: "2,14 m" },
+      { label: "Altura de transporte", value: "3,11 m" },
+    ],
   },
   {
     id: "56",
@@ -506,6 +672,12 @@ export const products: Product[] = [
     description:
       "Rolo compactador liso vibratório Caterpillar, indicado para compactação de solo e base asfáltica em obras viárias e de pavimentação.",
     featured: false,
+    specs: [
+      { label: "Peso operacional", value: "10.500 kg" },
+      { label: "Comprimento", value: "4,95 m" },
+      { label: "Largura do tambor", value: "1,70 m" },
+      { label: "Altura de transporte", value: "3,05 m" },
+    ],
   },
   {
     id: "59",
@@ -517,6 +689,12 @@ export const products: Product[] = [
     description:
       "Rolo compactador vibratório Caterpillar de porte médio, com pé de carneiro, adequado para compactação de solos em aterros e terraplenagem.",
     featured: false,
+    specs: [
+      { label: "Peso operacional", value: "6.745 kg" },
+      { label: "Comprimento", value: "4,96 m" },
+      { label: "Largura do tambor", value: "1,68 m" },
+      { label: "Altura de transporte", value: "2,93 m" },
+    ],
   },
   {
     id: "60",
@@ -528,6 +706,12 @@ export const products: Product[] = [
     description:
       "Rolo compactador vibratório liso Dynapac, indicado para compactação de solo em obras de terraplenagem e pavimentação.",
     featured: false,
+    specs: [
+      { label: "Peso operacional", value: "7.000 kg" },
+      { label: "Comprimento", value: "4,90 m" },
+      { label: "Largura do tambor", value: "1,85 m" },
+      { label: "Altura de transporte", value: "2,85 m" },
+    ],
   },
   {
     id: "61",
@@ -539,6 +723,12 @@ export const products: Product[] = [
     description:
       "Rolo compactador tandem (duplo tambor liso) Dynapac, indicado para compactação de camadas asfálticas em obras de pavimentação.",
     featured: false,
+    specs: [
+      { label: "Peso operacional", value: "1.665 kg" },
+      { label: "Comprimento", value: "2,10 m" },
+      { label: "Largura do tambor", value: "0,90 m" },
+      { label: "Altura de transporte", value: "2,30 m" },
+    ],
   },
   {
     id: "62",
@@ -550,6 +740,12 @@ export const products: Product[] = [
     description:
       "Rolo compactador tandem de pequeno porte Wacker Neuson, ideal para compactação de asfalto e solo em obras urbanas e serviços de menor escala.",
     featured: false,
+    specs: [
+      { label: "Peso operacional", value: "1.000 kg" },
+      { label: "Comprimento", value: "1,90 m" },
+      { label: "Largura do tambor", value: "0,90 m" },
+      { label: "Altura de transporte", value: "2,30 m" },
+    ],
   },
   {
     id: "63",
@@ -561,6 +757,12 @@ export const products: Product[] = [
     description:
       "Rolo compactador de valas (trench roller) Wacker Neuson, com dois tambores pé de carneiro, indicado para compactação em valas e locais de acesso restrito.",
     featured: false,
+    specs: [
+      { label: "Peso operacional", value: "1.560 kg" },
+      { label: "Comprimento", value: "1,85 m" },
+      { label: "Largura do tambor", value: "0,82 m" },
+      { label: "Altura de transporte", value: "1,25 m" },
+    ],
   },
   {
     id: "64",

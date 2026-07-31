@@ -100,6 +100,22 @@ export default function ProductPage({ params }: ProductPageProps) {
               </h1>
               <p className="text-gray-600 leading-relaxed">{product.description}</p>
 
+              {product.specs && product.specs.length > 0 && (
+                <div className="rounded-lg overflow-hidden border border-gray-100">
+                  {product.specs.map((spec, index) => (
+                    <div
+                      key={spec.label}
+                      className={`flex items-center justify-between px-4 py-2.5 text-sm ${
+                        index % 2 === 0 ? "bg-gray-50" : "bg-white"
+                      }`}
+                    >
+                      <span className="text-gray-600">{spec.label}</span>
+                      <span className="font-semibold text-gray-800">{spec.value}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+
               <div className="pt-3 flex flex-wrap items-center gap-4">
                 <a
                   href={generateWhatsAppLink(whatsappTarget, whatsappMessage)}
