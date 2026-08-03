@@ -11,6 +11,9 @@ import ProductsHero from "./ProductsHero";
 export const metadata: Metadata = {
   title: "Produtos",
   description: `Catálogo completo de materiais de construção, ferramentas e equipamentos da ${siteConfig.name}. Filtre por categoria e encontre o que precisa.`,
+  alternates: {
+    canonical: "/produtos",
+  },
 };
 
 interface ProductsPageProps {

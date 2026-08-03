@@ -8,6 +8,9 @@ import ContatoWhatsAppCard from "@/components/sections/ContatoWhatsAppCard";
 export const metadata: Metadata = {
   title: "Contato",
   description: `Entre em contato com a ${siteConfig.name}. Telefone, e-mail, endereço e WhatsApp. Estamos prontos para atender você.`,
+  alternates: {
+    canonical: "/contato",
+  },
 };
 
 export default function ContatoPage() {

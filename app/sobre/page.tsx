@@ -11,6 +11,9 @@ import FadeIn from "@/components/ui/FadeIn";
 export const metadata: Metadata = {
   title: "Sobre Nós",
   description: `Conheça a história e os valores da ${siteConfig.name}, referência em materiais de construção há mais de 20 anos.`,
+  alternates: {
+    canonical: "/sobre",
+  },
 };
 
 const values = [
