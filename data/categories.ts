@@ -12,7 +12,7 @@ export const categories: Category[] = [
     id: "2",
     name: "Equipamentos Pesados",
     slug: "equipamentos-pesados",
-    image: "/images/products/retro CASE.jpg.jpeg",
+    image: "/images/products/retro-case.jpeg",
     description: "Máquinas e equipamentos pesados para grandes obras e construções.",
   },
   {
