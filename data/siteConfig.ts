@@ -4,7 +4,7 @@ export const siteConfig: SiteConfig = {
   name: "Construloc",
   url: "https://construloc.com.br",
   description:
-    "Sua loja completa de materiais de construção, ferramentas e equipamentos. Qualidade e tradição a serviço da sua obra.",
+    "Locação de máquinas e equipamentos para construção civil em Itatiba e região. Plataformas elevatórias, compactação, concreto e mais, com assistência técnica e entrega rápida.",
   phone: "(11) 4538-8065",
   phoneSecondary: "(11) 4538-8064",
   phoneConcreto: "(11) 4534-1771",
@@ -25,9 +25,9 @@ export const siteConfig: SiteConfig = {
     youtube: "https://youtube.com/construloc",
   },
   hero: {
-    title: "TUDO PARA SUA OBRA EM UM SÓ LUGAR",
+    title: "ALUGUEL DE MÁQUINAS E EQUIPAMENTOS EM ITATIBA",
     subtitle:
-      "Ferramentas e equipamentos com qualidade garantida e o melhor preço da região.",
+      "Locação de plataformas elevatórias, compactação, concreto e equipamentos para construção, com entrega rápida e assistência técnica em Itatiba e região.",
   },
   about: {
     title: "35 anos construindo junto com você",
