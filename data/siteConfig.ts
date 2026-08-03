@@ -2,6 +2,7 @@ import type { SiteConfig } from "@/types";
 
 export const siteConfig: SiteConfig = {
   name: "Construloc",
+  url: "https://construloc.com.br",
   description:
     "Sua loja completa de materiais de construção, ferramentas e equipamentos. Qualidade e tradição a serviço da sua obra.",
   phone: "(11) 4538-8065",

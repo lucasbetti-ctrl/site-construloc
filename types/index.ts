@@ -1,5 +1,6 @@
 export interface SiteConfig {
   name: string;
+  url: string;
   description: string;
   phone: string;
   phoneSecondary?: string;
