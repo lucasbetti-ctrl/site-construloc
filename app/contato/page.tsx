@@ -18,7 +18,7 @@ export default function ContatoPage() {
     <>
       <section className="py-16 bg-gray-200">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-black text-primary uppercase">Fale com a Construloc em Itatiba</h1>
+          <h1 className="text-4xl md:text-5xl font-black text-primary uppercase">Fale com a Construloc</h1>
           <p className="mt-4 text-gray-500 text-lg max-w-xl mx-auto">
             Estamos localizados em Itatiba/SP e atendemos obras na cidade e região. Entre em contato pelos nossos canais de atendimento — respondemos rapidamente!
           </p>
