@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { brands } from "@/data/brands";
 import SectionTitle from "@/components/ui/SectionTitle";
 
@@ -20,14 +21,15 @@ export default function BrandsSection() {
           {doubled.map((brand, i) => (
             <div
               key={`${brand.id}-${i}`}
-              className="flex items-center justify-center bg-white border border-gray-200 rounded-lg p-6 h-40 w-72 shrink-0 hover:border-primary hover:shadow-sm transition-all duration-200"
+              className="relative flex items-center justify-center bg-white border border-gray-200 rounded-lg p-6 h-40 w-72 shrink-0 hover:border-primary hover:shadow-sm transition-all duration-200"
             >
               {brand.image ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
+                <Image
                   src={brand.image}
                   alt={brand.name}
-                  className="object-contain w-full h-full p-2"
+                  fill
+                  sizes="288px"
+                  className="object-contain p-2"
                 />
               ) : (
                 <span className="text-primary font-bold text-lg tracking-wide">{brand.name}</span>
