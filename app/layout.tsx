@@ -20,7 +20,7 @@ const barlowCondensed = Barlow_Condensed({
   variable: "--font-barlow-condensed",
 });
 
-const defaultTitle = `${siteConfig.name} — Materiais de Construção`;
+const defaultTitle = `${siteConfig.name} — Aluguel de Máquinas e Equipamentos em Itatiba`;
 const ogImage = "/images/hero/about-2.jpeg";
 
 export const metadata: Metadata = {
@@ -31,10 +31,11 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   keywords: [
-    "materiais de construção",
-    "ferramentas",
-    "construção civil",
-    "loja de construção",
+    "aluguel de máquinas Itatiba",
+    "locação de equipamentos Itatiba",
+    "aluguel de equipamentos para construção",
+    "locadora de máquinas",
+    "plataforma elevatória para alugar",
     siteConfig.name,
   ],
   authors: [{ name: siteConfig.name }],

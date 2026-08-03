@@ -9,8 +9,8 @@ import CategoryFilter from "./CategoryFilter";
 import ProductsHero from "./ProductsHero";
 
 export const metadata: Metadata = {
-  title: "Produtos",
-  description: `Catálogo completo de materiais de construção, ferramentas e equipamentos da ${siteConfig.name}. Filtre por categoria e encontre o que precisa.`,
+  title: "Equipamentos para Locação em Itatiba",
+  description: `Catálogo completo de máquinas e equipamentos para locação em Itatiba: plataformas elevatórias, compactação, concreto e ferramentas da ${siteConfig.name}.`,
   alternates: {
     canonical: "/produtos",
   },
@@ -37,12 +37,15 @@ export default function ProdutosPage({ searchParams }: ProductsPageProps) {
   return (
     <>
       <ProductsHero
-        title={activeCategory ? activeCategory.name : "Todos os Produtos"}
+        title={activeCategory ? activeCategory.name : "Equipamentos para Locação em Itatiba e Região"}
         busca={busca}
       />
 
       <section className="py-10 bg-gray-50 min-h-screen">
         <div className="container mx-auto px-4">
+          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-8">
+            Alugue máquinas e equipamentos para sua obra em Itatiba e região. Filtre por categoria para encontrar o equipamento certo, com condições de locação flexíveis e suporte técnico da Construloc.
+          </p>
           <CategoryFilter categories={categories} active={categoria} />
 
           {filtered.length > 0 ? (

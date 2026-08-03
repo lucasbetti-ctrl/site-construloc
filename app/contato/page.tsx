@@ -7,7 +7,7 @@ import ContatoWhatsAppCard from "@/components/sections/ContatoWhatsAppCard";
 
 export const metadata: Metadata = {
   title: "Contato",
-  description: `Entre em contato com a ${siteConfig.name}. Telefone, e-mail, endereço e WhatsApp. Estamos prontos para atender você.`,
+  description: `Entre em contato com a ${siteConfig.name} em Itatiba. Telefone, e-mail, endereço e WhatsApp. Estamos prontos para atender você.`,
   alternates: {
     canonical: "/contato",
   },
@@ -18,9 +18,9 @@ export default function ContatoPage() {
     <>
       <section className="py-16 bg-gray-200">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-black text-primary uppercase">Fale Conosco</h1>
+          <h1 className="text-4xl md:text-5xl font-black text-primary uppercase">Fale com a Construloc</h1>
           <p className="mt-4 text-gray-500 text-lg max-w-xl mx-auto">
-            Entre em contato pelos nossos canais de atendimento. Respondemos rapidamente!
+            Estamos localizados em Itatiba/SP e atendemos obras na cidade e região. Entre em contato pelos nossos canais de atendimento — respondemos rapidamente!
           </p>
         </div>
       </section>

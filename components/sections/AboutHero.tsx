@@ -12,7 +12,7 @@ export default function AboutHero() {
           transition={{ duration: 1.1, ease: "easeOut" }}
           className="text-4xl md:text-5xl font-black text-primary uppercase"
         >
-          Sobre Nós
+          Locadora de Equipamentos em Itatiba desde 1991
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 24 }}

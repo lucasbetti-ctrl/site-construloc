@@ -9,7 +9,7 @@ import BrandsSection from "@/components/sections/BrandsSection";
 import { siteConfig } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
-  title: `${siteConfig.name} — Materiais de Construção`,
+  title: `${siteConfig.name} — Aluguel de Máquinas e Equipamentos em Itatiba`,
   description: siteConfig.description,
 };
 

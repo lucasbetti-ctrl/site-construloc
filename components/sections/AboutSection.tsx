@@ -5,10 +5,10 @@ import { siteConfig } from "@/data/siteConfig";
 import SectionTitle from "@/components/ui/SectionTitle";
 
 const aboutImages = [
-  { src: "/images/about/sobre7.jpeg", alt: "Sede Construloc" },
-  { src: "/images/about/sobre6.jpeg", alt: "Frota Construloc" },
-  { src: "/images/about/sobre-8.PNG", alt: "Loja Construloc" },
-  { src: "/images/about/sobre5.jpeg", alt: "Equipamento Construloc em operação" },
+  { src: "/images/about/sobre7.jpeg", alt: "Sede da Construloc em Itatiba" },
+  { src: "/images/about/sobre6.jpeg", alt: "Frota de equipamentos para locação da Construloc" },
+  { src: "/images/about/sobre-8.PNG", alt: "Loja Construloc em Itatiba" },
+  { src: "/images/about/sobre5.jpeg", alt: "Equipamento para locação Construloc em operação" },
 ];
 
 export default function AboutSection() {

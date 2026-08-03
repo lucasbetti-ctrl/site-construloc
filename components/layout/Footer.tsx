@@ -21,7 +21,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-primary-200 text-sm leading-relaxed">
-              A primeira locadora de equipamentos de Itatiba desde 1991.
+              A primeira locadora de máquinas e equipamentos de Itatiba desde 1991. Atendemos obras em Itatiba e região.
             </p>
           </div>
 
