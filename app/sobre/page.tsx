@@ -9,8 +9,8 @@ import SobreWhatsAppButton from "@/components/sections/SobreWhatsAppButton";
 import FadeIn from "@/components/ui/FadeIn";
 
 export const metadata: Metadata = {
-  title: "Sobre Nós",
-  description: `Conheça a história e os valores da ${siteConfig.name}, referência em materiais de construção há mais de 20 anos.`,
+  title: "Sobre a Construloc — Locadora de Equipamentos em Itatiba",
+  description: `Conheça a história da ${siteConfig.name}, locadora de máquinas e equipamentos para construção em Itatiba desde 1991.`,
   alternates: {
     canonical: "/sobre",
   },
@@ -51,7 +51,7 @@ export default function SobrePage() {
                 className="mb-6"
               />
               <p className="text-gray-600 leading-relaxed mb-4">
-                A Construloc nasceu em 1991 da paixão por ajudar pessoas a realizarem seus sonhos de construção e reforma. Com mais de três décadas no mercado, somos referência em qualidade de produtos e atendimento personalizado. Nossa equipe especializada está sempre pronta para orientar você na escolha dos melhores materiais para cada etapa da sua obra.
+                A Construloc nasceu em 1991, em Itatiba, da paixão por ajudar pessoas a realizarem seus sonhos de construção e reforma. Com mais de três décadas no mercado, somos referência em locação de máquinas e equipamentos, atendendo obras em Itatiba e região com qualidade de produtos e atendimento personalizado. Nossa equipe especializada está sempre pronta para orientar você na escolha dos melhores equipamentos para cada etapa da sua obra.
               </p>
               <p className="text-gray-600 leading-relaxed">
                 Começamos como uma pequena loja de bairro com o sonho de oferecer qualidade acessível. Ao longo dos anos, crescemos e nos tornamos referência regional, mantendo sempre o compromisso com o cliente e a excelência nos produtos que oferecemos.
