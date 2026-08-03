@@ -1,7 +1,8 @@
 import type { MetadataRoute } from "next";
 import { products } from "@/data/products";
+import { siteConfig } from "@/data/siteConfig";
 
-const BASE_URL = "https://construloc.com.br";
+const BASE_URL = siteConfig.url;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [

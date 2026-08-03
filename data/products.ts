@@ -260,7 +260,7 @@ export const products: Product[] = [
     slug: "plataforma-tesoura-genie-gs-1932m",
     category: "Plataformas Elevatórias",
     categorySlug: "plataformas-elevatorias",
-    image: "/images/products/GS-1932m_Stowed.jpg.jpeg",
+    image: "/images/products/GS-1932m_Stowed.jpg",
     description:
       "Plataforma elevatória tipo tesoura, elétrica e compacta, indicada para trabalhos internos em altura com boa capacidade de carga.",
     featured: false,
@@ -278,7 +278,7 @@ export const products: Product[] = [
     slug: "plataforma-tesoura-genie-gs-3246",
     category: "Plataformas Elevatórias",
     categorySlug: "plataformas-elevatorias",
-    image: "/images/products/GS-3246_Cut-out_stowed_extended.jpg.jpeg",
+    image: "/images/products/GS-3246_Cut-out_stowed_extended.jpg",
     description:
       "Plataforma elevatória tipo tesoura, elétrica, com raio de giro interno zero, ideal para ambientes internos e externos e corredores estreitos.",
     featured: false,
@@ -296,7 +296,7 @@ export const products: Product[] = [
     slug: "plataforma-tesoura-genie-gs-4046",
     category: "Plataformas Elevatórias",
     categorySlug: "plataformas-elevatorias",
-    image: "/images/products/GS-4046_Cut-out_stowed_no_shadow.jpg.jpeg",
+    image: "/images/products/GS-4046_Cut-out_stowed_no_shadow.jpg",
     description:
       "Plataforma elevatória tipo tesoura, elétrica, de grande altura de trabalho, indicada para manutenção industrial e obras em ambientes internos.",
     featured: false,
@@ -333,7 +333,7 @@ export const products: Product[] = [
     slug: "plataforma-articulada-genie-z-45-25j-dc",
     category: "Plataformas Elevatórias",
     categorySlug: "plataformas-elevatorias",
-    image: "/images/products/Z-45-25_J_DC_Cut-out_1.jpg.jpeg",
+    image: "/images/products/Z-45-25_J_DC_Cut-out_1.jpg",
     description:
       "Plataforma articulada elétrica, com lança e jib articulado, ideal para trabalhos em altura internos e externos com operação silenciosa.",
     featured: false,
@@ -409,7 +409,7 @@ export const products: Product[] = [
     slug: "esmerilhadeira-angular-bosch-4-polegadas",
     category: "Equipamentos Leves",
     categorySlug: "equipamentos-leves",
-    image: "/images/products/Esmerilhadeira 4 Polegadas.jpeg",
+    image: "/images/products/esmerilhadeira-4-polegadas.jpeg",
     description:
       "Esmerilhadeira angular de 4½ polegadas, ideal para corte e desbaste em metais e alvenaria.",
     featured: false,
@@ -420,7 +420,7 @@ export const products: Product[] = [
     slug: "esmerilhadeira-angular-bosch-9-polegadas",
     category: "Equipamentos Leves",
     categorySlug: "equipamentos-leves",
-    image: "/images/products/Esmerilhadeira 9 Polegadas.jpeg",
+    image: "/images/products/esmerilhadeira-9-polegadas.jpeg",
     description:
       "Esmerilhadeira angular de 9 polegadas, robusta, indicada para corte e desbaste pesado em metal e concreto.",
     featured: false,
@@ -431,7 +431,7 @@ export const products: Product[] = [
     slug: "furadeira-com-mandril-bosch",
     category: "Equipamentos Leves",
     categorySlug: "equipamentos-leves",
-    image: "/images/products/Furadeira Mandril.jpeg",
+    image: "/images/products/furadeira-mandril.jpeg",
     description:
       "Furadeira de impacto profissional com mandril de aperto rápido, indicada para perfuração em concreto, madeira e metal.",
     featured: false,
@@ -442,7 +442,7 @@ export const products: Product[] = [
     slug: "furadeira-martelete-2kg-sds-plus-dewalt",
     category: "Equipamentos Leves",
     categorySlug: "equipamentos-leves",
-    image: "/images/products/Furadeira martelete 2 KG sds plus.jpeg",
+    image: "/images/products/furadeira-martelete-2kg-sds-plus.jpeg",
     description:
       "Martelete perfurador leve e compacto, ideal para furos em concreto e alvenaria com função rotobrocador e rompimento leve.",
     featured: false,
@@ -453,7 +453,7 @@ export const products: Product[] = [
     slug: "furadeira-sds-plus-bosch",
     category: "Equipamentos Leves",
     categorySlug: "equipamentos-leves",
-    image: "/images/products/Furadeira sds plus.jpeg",
+    image: "/images/products/furadeira-sds-plus.jpeg",
     description:
       "Martelete perfurador SDS Plus, com 3 funções (perfurar, rotomartelo e cinzelar), ideal para furos em concreto, alvenaria e metal.",
     featured: false,
@@ -464,7 +464,7 @@ export const products: Product[] = [
     slug: "lixadeira-politriz-7-polegadas-dewalt",
     category: "Equipamentos Leves",
     categorySlug: "equipamentos-leves",
-    image: "/images/products/Lixadeira Politriz 7 polegadas.jpeg",
+    image: "/images/products/lixadeira-politriz-7-polegadas.jpeg",
     description:
       "Politriz/lixadeira de 7 polegadas, indicada para polimento, lixamento e acabamento em metal e madeira.",
     featured: false,
@@ -475,7 +475,7 @@ export const products: Product[] = [
     slug: "lixadeira-de-cinta-makita",
     category: "Equipamentos Leves",
     categorySlug: "equipamentos-leves",
-    image: "/images/products/Lixadeira de cinta.jpeg",
+    image: "/images/products/lixadeira-de-cinta.jpeg",
     description:
       "Lixadeira de cinta profissional, ideal para desbaste e acabamento de superfícies de madeira e metal.",
     featured: false,
@@ -486,7 +486,7 @@ export const products: Product[] = [
     slug: "lixadeira-orbital-quarto-de-folha-dewalt",
     category: "Equipamentos Leves",
     categorySlug: "equipamentos-leves",
-    image: "/images/products/Lixadeira orbital 1 quarto.jpeg",
+    image: "/images/products/lixadeira-orbital-1-quarto.jpeg",
     description:
       "Lixadeira orbital compacta, com coletor de pó, indicada para acabamento fino em madeira e superfícies planas.",
     featured: false,
@@ -497,7 +497,7 @@ export const products: Product[] = [
     slug: "martelete-demolidor-16kg-dewalt",
     category: "Equipamentos Leves",
     categorySlug: "equipamentos-leves",
-    image: "/images/products/Martelete demolidor 16 kg.jpeg",
+    image: "/images/products/martelete-demolidor-16kg.jpeg",
     description:
       "Martelo demolidor de média/alta capacidade, indicado para quebra de concreto, pisos e alvenaria.",
     featured: false,
@@ -508,7 +508,7 @@ export const products: Product[] = [
     slug: "martelete-demolidor-30kg-dewalt",
     category: "Equipamentos Leves",
     categorySlug: "equipamentos-leves",
-    image: "/images/products/Martelete demolidor 30kg.jpeg",
+    image: "/images/products/martelete-demolidor-30kg.jpeg",
     description:
       "Martelo demolidor de grande porte, tipo jackhammer vertical, para demolição pesada de concreto e pavimento.",
     featured: false,
@@ -519,7 +519,7 @@ export const products: Product[] = [
     slug: "martelete-rompedor-10kg-dewalt",
     category: "Equipamentos Leves",
     categorySlug: "equipamentos-leves",
-    image: "/images/products/Martelete rompedor 10kg.jpeg",
+    image: "/images/products/martelete-rompedor-10kg.jpeg",
     description:
       "Rompedor SDS Max, indicado para quebra e cinzelamento em concreto de média espessura, com cabo lateral para maior controle.",
     featured: false,
@@ -530,7 +530,7 @@ export const products: Product[] = [
     slug: "martelete-perfurador-sds-max-5kg-dewalt",
     category: "Equipamentos Leves",
     categorySlug: "equipamentos-leves",
-    image: "/images/products/Marteleteperfurador sds max 05 kg.jpeg",
+    image: "/images/products/martelete-perfurador-sds-max-05kg.jpeg",
     description:
       "Martelete perfurador SDS Max, com seletor de 3 funções, ideal para perfuração e rompimento leve em concreto e alvenaria.",
     featured: false,
@@ -541,7 +541,7 @@ export const products: Product[] = [
     slug: "martelete-perfurador-sds-max-7kg-dewalt",
     category: "Equipamentos Leves",
     categorySlug: "equipamentos-leves",
-    image: "/images/products/Marteleteperfurador sds max 07kg.jpeg",
+    image: "/images/products/martelete-perfurador-sds-max-07kg.jpeg",
     description:
       "Martelete perfurador SDS Max de maior potência, indicado para furos e rompimento moderado em concreto e alvenaria.",
     featured: false,
@@ -552,7 +552,7 @@ export const products: Product[] = [
     slug: "martelete-perfurador-sds-max-10kg-vonder",
     category: "Equipamentos Leves",
     categorySlug: "equipamentos-leves",
-    image: "/images/products/Marteleteperfurador sds max 10kg.jpeg",
+    image: "/images/products/martelete-perfurador-sds-max-10kg.jpeg",
     description:
       "Martelo rompedor/perfurador robusto, com seleção de 3 funções, indicado para demolição e furação pesada em obras de médio/grande porte.",
     featured: false,
@@ -563,7 +563,7 @@ export const products: Product[] = [
     slug: "plaina-eletrica-makita",
     category: "Equipamentos Leves",
     categorySlug: "equipamentos-leves",
-    image: "/images/products/Plaina makita.jpeg",
+    image: "/images/products/plaina-makita.jpeg",
     description:
       "Plaina elétrica, indicada para aplainamento e chanfro de superfícies de madeira em marcenaria e carpintaria.",
     featured: false,
@@ -574,7 +574,7 @@ export const products: Product[] = [
     slug: "serra-marmore-makita",
     category: "Equipamentos Leves",
     categorySlug: "equipamentos-leves",
-    image: "/images/products/Serra Mármore.jpeg",
+    image: "/images/products/serra-marmore.jpeg",
     description:
       "Serra mármore, indicada para cortes de precisão em mármore, granito e cerâmica.",
     featured: false,
@@ -585,7 +585,7 @@ export const products: Product[] = [
     slug: "serra-tico-tico-dewalt",
     category: "Equipamentos Leves",
     categorySlug: "equipamentos-leves",
-    image: "/images/products/Serra Tico Tico.jpeg",
+    image: "/images/products/serra-tico-tico.jpeg",
     description:
       "Serra tico-tico com velocidade variável, ideal para cortes curvos e retos em madeira, metal e plástico.",
     featured: false,
@@ -596,7 +596,7 @@ export const products: Product[] = [
     slug: "serra-circular-7-1-4-polegadas-makita",
     category: "Equipamentos Leves",
     categorySlug: "equipamentos-leves",
-    image: "/images/products/Serra circular 7 1 quarto polegadas.jpeg",
+    image: "/images/products/serra-circular-7-1-4-polegadas.jpeg",
     description:
       "Serra circular de 7¼ polegadas, potente e precisa, indicada para cortes retos em madeira e compensados.",
     featured: false,
@@ -607,7 +607,7 @@ export const products: Product[] = [
     slug: "serra-circular-9-1-4-polegadas-bosch",
     category: "Equipamentos Leves",
     categorySlug: "equipamentos-leves",
-    image: "/images/products/Serra circular 9 1 quarto polegadas.jpeg",
+    image: "/images/products/serra-circular-9-1-4-polegadas.jpeg",
     description:
       "Serra circular de alta potência, indicada para cortes retos e profundos em madeira em obras e marcenaria.",
     featured: false,
@@ -618,7 +618,7 @@ export const products: Product[] = [
     slug: "vibrador-de-concreto-menegotti",
     category: "Equipamentos Leves",
     categorySlug: "equipamentos-leves",
-    image: "/images/products/Vibrador de Concreto.jpeg",
+    image: "/images/products/vibrador-de-concreto.jpeg",
     description:
       "Vibrador de imersão para concreto, com mangote flexível, indicado para adensamento de concreto em fundações, pilares e lajes.",
     featured: false,
@@ -629,7 +629,7 @@ export const products: Product[] = [
     slug: "rolo-compactador-cat-cp54-cabinado",
     category: "Equipamentos Pesados",
     categorySlug: "equipamentos-pesados",
-    image: "/images/products/CP54 Cabinado.jpg.jpeg",
+    image: "/images/products/cp54-cabinado.jpeg",
     description:
       "Rolo compactador pé de carneiro Caterpillar, cabinado (cabine fechada com ar-condicionado), indicado para compactação de solos em obras de terraplenagem e infraestrutura.",
     featured: false,
@@ -646,7 +646,7 @@ export const products: Product[] = [
     slug: "retroescavadeira-case-580n",
     category: "Equipamentos Pesados",
     categorySlug: "equipamentos-pesados",
-    image: "/images/products/retro CASE.jpg.jpeg",
+    image: "/images/products/retro-case.jpeg",
     description:
       "Retroescavadeira CASE, equipada com pá carregadeira frontal e braço retroescavador traseiro, ideal para escavação, carregamento e movimentação de terra em obras de médio e grande porte.",
     featured: false,
@@ -657,7 +657,7 @@ export const products: Product[] = [
     slug: "retroescavadeira-manitou-mbl-x-900",
     category: "Equipamentos Pesados",
     categorySlug: "equipamentos-pesados",
-    image: "/images/products/retro MANITOU.jpg.jpeg",
+    image: "/images/products/retro-manitou.jpeg",
     description:
       "Retroescavadeira Manitou com pá carregadeira frontal e braço retroescavador, versátil para escavação, carregamento e serviços gerais em canteiro de obras.",
     featured: false,
@@ -668,7 +668,7 @@ export const products: Product[] = [
     slug: "rolo-compactador-cat-cb534d",
     category: "Equipamentos Pesados",
     categorySlug: "equipamentos-pesados",
-    image: "/images/products/rolo CAT CB534.jfif.jpeg",
+    image: "/images/products/rolo-cat-cb534.jpeg",
     description:
       "Rolo compactador liso vibratório Caterpillar, indicado para compactação de solo e base asfáltica em obras viárias e de pavimentação.",
     featured: false,
@@ -685,7 +685,7 @@ export const products: Product[] = [
     slug: "rolo-compactador-cat-cs423e",
     category: "Equipamentos Pesados",
     categorySlug: "equipamentos-pesados",
-    image: "/images/products/rolo CS423.webp",
+    image: "/images/products/rolo-cs423.webp",
     description:
       "Rolo compactador vibratório Caterpillar de porte médio, com pé de carneiro, adequado para compactação de solos em aterros e terraplenagem.",
     featured: false,
@@ -702,7 +702,7 @@ export const products: Product[] = [
     slug: "rolo-compactador-dynapac-ca150",
     category: "Equipamentos Pesados",
     categorySlug: "equipamentos-pesados",
-    image: "/images/products/rolo Dynapac CA150.jpg.jpeg",
+    image: "/images/products/rolo-dynapac-ca150.jpeg",
     description:
       "Rolo compactador vibratório liso Dynapac, indicado para compactação de solo em obras de terraplenagem e pavimentação.",
     featured: false,
@@ -719,7 +719,7 @@ export const products: Product[] = [
     slug: "rolo-compactador-dynapac-cc900",
     category: "Equipamentos Pesados",
     categorySlug: "equipamentos-pesados",
-    image: "/images/products/rolo Dynapac CC900.jfif.jpeg",
+    image: "/images/products/rolo-dynapac-cc900.jpeg",
     description:
       "Rolo compactador tandem (duplo tambor liso) Dynapac, indicado para compactação de camadas asfálticas em obras de pavimentação.",
     featured: false,
@@ -736,7 +736,7 @@ export const products: Product[] = [
     slug: "rolo-compactador-wacker-neuson-rd-12",
     category: "Equipamentos Pesados",
     categorySlug: "equipamentos-pesados",
-    image: "/images/products/rolo RD-12.jpg.jpeg",
+    image: "/images/products/rolo-rd-12.jpeg",
     description:
       "Rolo compactador tandem de pequeno porte Wacker Neuson, ideal para compactação de asfalto e solo em obras urbanas e serviços de menor escala.",
     featured: false,
@@ -803,7 +803,7 @@ export const products: Product[] = [
     slug: "serra-asfalto-clipper",
     category: "Equipamentos Leves",
     categorySlug: "equipamentos-leves",
-    image: "/images/products/Serra asfalto clipper.png",
+    image: "/images/products/serra-asfalto-clipper.png",
     description:
       "Cortadora de piso a combustão, com disco diamantado, indicada para corte de juntas em concreto e asfalto.",
     featured: false,
@@ -814,7 +814,7 @@ export const products: Product[] = [
     slug: "rocadeira-a-gasolina",
     category: "Equipamentos Leves",
     categorySlug: "equipamentos-leves",
-    image: "/images/products/Roçadeira a gasolina.png",
+    image: "/images/products/rocadeira-a-gasolina.png",
     description:
       "Roçadeira lateral a combustão, indicada para corte de mato, grama alta e limpeza de terrenos.",
     featured: false,
@@ -825,7 +825,7 @@ export const products: Product[] = [
     slug: "betoneira-400-litros",
     category: "Equipamentos Leves",
     categorySlug: "equipamentos-leves",
-    image: "/images/products/Betoneria 400 litros.jpeg",
+    image: "/images/products/betoneira-400-litros.jpeg",
     description:
       "Betoneira com capacidade de 400 litros, indicada para preparo de concreto e argamassa em obras de médio e grande porte.",
     featured: false,
@@ -836,7 +836,7 @@ export const products: Product[] = [
     slug: "andaimes",
     category: "Equipamentos Leves",
     categorySlug: "equipamentos-leves",
-    image: "/images/products/Andaimes.jpeg",
+    image: "/images/products/andaimes.jpeg",
     description:
       "Torre de escoramento/andaime metálico modular, utilizada para sustentação de estruturas e acesso em altura em obras.",
     featured: false,
@@ -847,7 +847,7 @@ export const products: Product[] = [
     slug: "sistema-de-escoramento",
     category: "Equipamentos Leves",
     categorySlug: "equipamentos-leves",
-    image: "/images/products/Sistema de escoramento.jpeg",
+    image: "/images/products/sistema-de-escoramento.jpeg",
     description:
       "Kit de escoras metálicas telescópicas com forma de madeira, utilizado para sustentação de lajes durante a concretagem.",
     featured: false,
@@ -858,7 +858,7 @@ export const products: Product[] = [
     slug: "compressor-de-ar",
     category: "Equipamentos Leves",
     categorySlug: "equipamentos-leves",
-    image: "/images/products/Compressor de ar.jpeg",
+    image: "/images/products/compressor-de-ar.jpeg",
     description:
       "Compressor de ar de 100 litros, 2 HP, indicado para uso de ferramentas pneumáticas e pintura em obras e oficinas.",
     featured: false,
@@ -869,7 +869,7 @@ export const products: Product[] = [
     slug: "compactador-de-solo",
     category: "Equipamentos Leves",
     categorySlug: "equipamentos-leves",
-    image: "/images/products/Compactador de solo.jpeg",
+    image: "/images/products/compactador-de-solo.jpeg",
     description:
       "Compactador de solo tipo soquete (sapo), indicado para compactação de valas e solos em espaços confinados.",
     featured: false,
@@ -880,7 +880,7 @@ export const products: Product[] = [
     slug: "placa-vibratoria",
     category: "Equipamentos Leves",
     categorySlug: "equipamentos-leves",
-    image: "/images/products/Placa vibratória.jpeg",
+    image: "/images/products/placa-vibratoria.jpeg",
     description:
       "Placa vibratória compactadora, indicada para compactação de solos granulares e bases em obras de pavimentação.",
     featured: false,
@@ -891,7 +891,7 @@ export const products: Product[] = [
     slug: "alisadora-de-concreto",
     category: "Equipamentos Leves",
     categorySlug: "equipamentos-leves",
-    image: "/images/products/Alisadora de concreto.jpeg",
+    image: "/images/products/alisadora-de-concreto.jpeg",
     description:
       "Acabadora de concreto tipo helicóptero, indicada para o alisamento e acabamento de pisos de concreto.",
     featured: false,
@@ -902,7 +902,7 @@ export const products: Product[] = [
     slug: "motobomba-submersa",
     category: "Equipamentos Leves",
     categorySlug: "equipamentos-leves",
-    image: "/images/products/Motobomba submersa.jpeg",
+    image: "/images/products/motobomba-submersa.jpeg",
     description:
       "Motobomba submersa a combustão, indicada para recalque e drenagem de água em obras, valas e fundações.",
     featured: false,
@@ -913,7 +913,7 @@ export const products: Product[] = [
     slug: "lavadora-alta-pressao",
     category: "Equipamentos Leves",
     categorySlug: "equipamentos-leves",
-    image: "/images/products/Lavadora alta pressão.jpeg",
+    image: "/images/products/lavadora-alta-pressao.jpeg",
     description:
       "Lavadora de alta pressão profissional, sobre rodízios, indicada para limpeza pesada de superfícies, equipamentos e veículos.",
     featured: false,

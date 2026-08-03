@@ -7,6 +7,7 @@ import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
 import ProductImageCarousel from "./ProductImageCarousel";
 
 import { products } from "@/data/products";
+import { siteConfig } from "@/data/siteConfig";
 import { generateWhatsAppLink } from "@/lib/whatsapp";
 
 interface ProductPageProps {
@@ -21,15 +22,25 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   const product = products.find((p) => p.slug === params.slug);
 
   if (!product) {
-    return { title: "Produto não encontrado" };
+    return { title: "Produto não encontrado", robots: { index: false } };
   }
 
   return {
     title: product.name,
     description: product.description,
+    alternates: {
+      canonical: `/produtos/${product.slug}`,
+    },
     openGraph: {
       title: product.name,
       description: product.description,
+      images: [{ url: product.image, alt: product.name }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: product.name,
+      description: product.description,
+      images: [product.image],
     },
   };
 }
@@ -44,8 +55,47 @@ export default function ProductPage({ params }: ProductPageProps) {
   const whatsappMessage = `Olá! Tenho interesse no produto: ${product.name}. Poderia me passar mais informações?`;
   const whatsappTarget = product.categorySlug === "concreto" ? "concreto" : "maquinas";
 
+  const productJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.name,
+    description: product.description,
+    image: `${siteConfig.url}${product.image}`,
+    category: product.category,
+    brand: { "@type": "Brand", name: siteConfig.name },
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url },
+      { "@type": "ListItem", position: 2, name: "Produtos", item: `${siteConfig.url}/produtos` },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: product.category,
+        item: `${siteConfig.url}/produtos?categoria=${product.categorySlug}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 4,
+        name: product.name,
+        item: `${siteConfig.url}/produtos/${product.slug}`,
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <div className="container mx-auto px-4 py-10">
         {/* Breadcrumb */}
         <nav aria-label="Navegação de caminho" className="mb-6">
