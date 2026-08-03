@@ -37,7 +37,7 @@ export default function ProductsHero({ title, busca }: ProductsHeroProps) {
                 Resultados para: <strong className="text-secondary">&ldquo;{busca}&rdquo;</strong>
               </>
             ) : (
-              "Confira nosso catálogo completo de equipamentos para locação em Itatiba e região."
+              "Confira nosso catálogo completo de equipamentos para locação."
             )}
           </motion.p>
         </AnimatePresence>

@@ -37,7 +37,7 @@ export default function ProdutosPage({ searchParams }: ProductsPageProps) {
   return (
     <>
       <ProductsHero
-        title={activeCategory ? activeCategory.name : "Equipamentos para Locação em Itatiba"}
+        title={activeCategory ? activeCategory.name : "Equipamentos para Locação em Itatiba e Região"}
         busca={busca}
       />
 
