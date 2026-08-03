@@ -57,6 +57,9 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: [ogImage],
   },
+  verification: {
+    google: "lZSwaOwUt58QYDx5Ky70TljYaXZXdsVbdhgDLg9Dcdo",
+  },
 };
 
 const localBusinessJsonLd = {
