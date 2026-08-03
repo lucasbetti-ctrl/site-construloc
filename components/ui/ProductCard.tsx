@@ -13,7 +13,7 @@ export default function ProductCard({ product }: ProductCardProps) {
       <div className="relative aspect-square w-full overflow-hidden bg-white p-6 border-b border-gray-100">
         <Image
           src={product.image}
-          alt={product.name}
+          alt={`${product.name} para aluguel em Itatiba`}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
           className="object-contain hover:scale-105 transition-transform duration-300"

@@ -7,14 +7,23 @@ import { siteConfig } from "@/data/siteConfig";
 import { useWhatsAppModal } from "@/components/layout/WhatsAppModalProvider";
 import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
 
+const heroAlts: Record<number, string> = {
+  8: "Plataforma articulada JLG Lift para locação da Construloc em obra em Itatiba",
+  3: "Frota de plataformas elevatórias para locação no galpão da Construloc",
+  7: "Plataforma articulada em operação no galpão de equipamentos da Construloc",
+  2: "Caminhão da Construloc transportando rolo compactador CAT para locação",
+  4: "Caminhão da Construloc entregando plataforma elevatória Skyjack em Itatiba",
+  5: "Equipamentos para locação estacionados no galpão da Construloc em Itatiba",
+};
+
 const slides = [8, 3, 7, 2, 4, 5].map((n) => ({
   src: `/images/hero/about-${n}.jpeg`,
-  alt: `Construloc - foto ${n}`,
+  alt: heroAlts[n],
 }));
 
 slides.push({
   src: "/images/hero/concreto-2.png",
-  alt: "Construloc - concreto",
+  alt: "Equipamentos para concreto disponíveis para locação na Construloc",
 });
 
 export default function HeroSection() {

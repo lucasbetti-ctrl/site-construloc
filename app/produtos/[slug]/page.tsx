@@ -126,12 +126,12 @@ export default function ProductPage({ params }: ProductPageProps) {
           <div className="flex flex-col md:flex-row md:items-start">
             {/* Imagem */}
             {product.images && product.images.length > 1 ? (
-              <ProductImageCarousel images={product.images} alt={product.name} />
+              <ProductImageCarousel images={product.images} alt={`${product.name} para aluguel em Itatiba`} />
             ) : (
               <div className="relative w-full md:w-[320px] shrink-0 aspect-square bg-white p-6">
                 <Image
                   src={product.image}
-                  alt={product.name}
+                  alt={`${product.name} para aluguel em Itatiba`}
                   fill
                   sizes="(max-width: 768px) 100vw, 320px"
                   className="object-contain"
